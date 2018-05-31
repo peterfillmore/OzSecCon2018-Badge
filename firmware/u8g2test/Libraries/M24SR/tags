@@ -1,0 +1,616 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AAR_TYPE_STRING	inc/lib_NDEF.h	72;"	d
+AAR_TYPE_STRING_LENGTH	inc/lib_NDEF.h	73;"	d
+ASK_FOR_SESSION	inc/lib_M24SR.h	45;"	d
+BEGIN	inc/lib_NDEF_Vcard.h	47;"	d
+BEGIN_STRING_SIZE	inc/lib_NDEF_Vcard.h	65;"	d
+BLINKING_FAST	inc/lib_NDEF_MyApp.h	52;"	d
+BLINKING_MEDIUM	inc/lib_NDEF_MyApp.h	51;"	d
+BLINKING_NONE	inc/lib_NDEF_MyApp.h	49;"	d
+BLINKING_SLOW	inc/lib_NDEF_MyApp.h	50;"	d
+BLINK_CONFIG	inc/lib_NDEF_MyApp.h	39;"	d
+BLINK_CONFIG_END	inc/lib_NDEF_MyApp.h	41;"	d
+BLINK_CONFIG_END_STRING_SIZE	inc/lib_NDEF_MyApp.h	42;"	d
+BLINK_CONFIG_STRING_SIZE	inc/lib_NDEF_MyApp.h	40;"	d
+BT_TAG	inc/lib_TagType4.h	/^	BT_TAG,$/;"	e	enum:__anon17
+BT_TYPE	inc/lib_NDEF.h	/^	BT_TYPE,$/;"	e	enum:__anon18
+BackGroundColor	inc/lib_NDEF_MyApp.h	/^	uint16_t BackGroundColor;$/;"	m	struct:__anon7
+Body	inc/drv_M24SR.h	/^  C_APDU_Body Body;$/;"	m	struct:__anon11
+CCFileStruct	src/lib_TagType4.c	/^sCCFileInfo CCFileStruct;$/;"	v
+CCPrivateFile	src/lib_STProprietary_feature.c	/^uint8_t CCPrivateFile[8*SYS_NUMBER_OF_MANAGED_FILE];$/;"	v
+CC_FILE_ID	inc/drv_M24SR.h	55;"	d
+CELL_TEL	inc/lib_NDEF_Vcard.h	53;"	d
+CELL_TEL_STRING_SIZE	inc/lib_NDEF_Vcard.h	71;"	d
+CF_Mask	inc/lib_NDEF.h	56;"	d
+CLA	inc/drv_M24SR.h	/^  uint8_t CLA;  \/* Command class *\/$/;"	m	struct:__anon9
+C_APDU	inc/drv_M24SR.h	/^} C_APDU;$/;"	t	typeref:struct:__anon11
+C_APDU_Body	inc/drv_M24SR.h	/^} C_APDU_Body;$/;"	t	typeref:struct:__anon10
+C_APDU_CHANGE	inc/drv_M24SR.h	144;"	d
+C_APDU_CLA_DEFAULT	inc/drv_M24SR.h	128;"	d
+C_APDU_CLA_ST	inc/drv_M24SR.h	129;"	d
+C_APDU_DISABLE	inc/drv_M24SR.h	145;"	d
+C_APDU_ENABLE	inc/drv_M24SR.h	146;"	d
+C_APDU_GET_RESPONCE	inc/drv_M24SR.h	133;"	d
+C_APDU_Header	inc/drv_M24SR.h	/^} C_APDU_Header;$/;"	t	typeref:struct:__anon9
+C_APDU_INTERRUPT	inc/drv_M24SR.h	149;"	d
+C_APDU_READ_BINARY	inc/drv_M24SR.h	137;"	d
+C_APDU_READ_RECORD	inc/drv_M24SR.h	140;"	d
+C_APDU_SELECT_FILE	inc/drv_M24SR.h	132;"	d
+C_APDU_STATUS	inc/drv_M24SR.h	134;"	d
+C_APDU_UPDATE_BINARY	inc/drv_M24SR.h	135;"	d
+C_APDU_UPDATE_FILE_TYPE	inc/drv_M24SR.h	136;"	d
+C_APDU_UPDATE_RECORD	inc/drv_M24SR.h	139;"	d
+C_APDU_VERIFY	inc/drv_M24SR.h	143;"	d
+C_APDU_WRITE_BINARY	inc/drv_M24SR.h	138;"	d
+CellTel	inc/lib_NDEF_Vcard.h	/^	char CellTel[40];$/;"	m	struct:__anon15
+CloseNDEFSession	inc/lib_wrapper.h	43;"	d
+Command	src/drv_M24SR.c	/^static C_APDU	 						Command;$/;"	v	file:
+DataBuffer	src/drv_M24SR.c	/^static uint8_t					 	DataBuffer[0xFF];$/;"	v	file:
+DefaultPassword	src/lib_M24SR.c	/^uint8_t DefaultPassword[16]={0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,$/;"	v
+DisableAllPassword	inc/lib_wrapper.h	56;"	d
+DisableReadOnly	inc/lib_wrapper.h	59;"	d
+DisableReadPassword	inc/lib_wrapper.h	53;"	d
+DisableWriteOnly	inc/lib_wrapper.h	61;"	d
+DisableWritePassword	inc/lib_wrapper.h	55;"	d
+EMAIL_TAG	inc/lib_TagType4.h	/^	EMAIL_TAG,$/;"	e	enum:__anon17
+EMAIL_TYPE_STRING	inc/lib_NDEF.h	99;"	d
+EMAIL_TYPE_STRING_LENGTH	inc/lib_NDEF.h	100;"	d
+END	inc/lib_NDEF_Vcard.h	60;"	d
+END_STRING_SIZE	inc/lib_NDEF_Vcard.h	78;"	d
+EmailAdd	inc/lib_NDEF_Email.h	/^	char EmailAdd[64];$/;"	m	struct:__anon4
+EnableReadOnly	inc/lib_wrapper.h	58;"	d
+EnableReadPassword	inc/lib_wrapper.h	52;"	d
+EnableWriteOnly	inc/lib_wrapper.h	60;"	d
+EnableWritePassword	inc/lib_wrapper.h	54;"	d
+FIRSTNAME	inc/lib_NDEF_Vcard.h	50;"	d
+FIRSTNAME_STRING_SIZE	inc/lib_NDEF_Vcard.h	68;"	d
+FIRST_RECORD_OFFSET	inc/lib_NDEF.h	47;"	d
+FileID	inc/lib_STProprietary_feature.h	/^	uint16_t FileID;$/;"	m	struct:__anon3
+FileID	inc/lib_TagType4.h	/^	uint16_t FileID;$/;"	m	struct:__anon16
+FirstName	inc/lib_NDEF_Vcard.h	/^	char FirstName[80];$/;"	m	struct:__anon15
+FontColor	inc/lib_NDEF_MyApp.h	/^	uint16_t FontColor;$/;"	m	struct:__anon7
+ForceReadData	inc/lib_wrapper.h	46;"	d
+FormatTag	inc/lib_wrapper.h	39;"	d
+GEO_TAG	inc/lib_TagType4.h	/^	GEO_TAG,$/;"	e	enum:__anon17
+GEO_TYPE_STRING	inc/lib_NDEF.h	93;"	d
+GEO_TYPE_STRING_LENGTH	inc/lib_NDEF.h	94;"	d
+GETLSB	inc/drv_M24SR.h	42;"	d
+GETMSB	inc/drv_M24SR.h	41;"	d
+GPO_Config	inc/lib_wrapper.h	62;"	d
+GetNDEFFileId	inc/lib_wrapper.h	41;"	d
+HIGH_IMPEDANCE	inc/drv_M24SR.h	/^	HIGH_IMPEDANCE= 0,$/;"	e	enum:__anon14
+HOME_ADDRESS	inc/lib_NDEF_Vcard.h	56;"	d
+HOME_ADDRESS_STRING_SIZE	inc/lib_NDEF_Vcard.h	74;"	d
+HOME_EMAIL	inc/lib_NDEF_Vcard.h	54;"	d
+HOME_EMAIL_STRING_SIZE	inc/lib_NDEF_Vcard.h	72;"	d
+HOME_TEL	inc/lib_NDEF_Vcard.h	51;"	d
+HOME_TEL_STRING_SIZE	inc/lib_NDEF_Vcard.h	69;"	d
+Header	inc/drv_M24SR.h	/^  C_APDU_Header Header;$/;"	m	struct:__anon11
+HomeAddress	inc/lib_NDEF_Vcard.h	/^	char HomeAddress[80];$/;"	m	struct:__anon15
+HomeEmail	inc/lib_NDEF_Vcard.h	/^	char HomeEmail[80];$/;"	m	struct:__anon15
+HomeTel	inc/lib_NDEF_Vcard.h	/^	char HomeTel[40];$/;"	m	struct:__anon15
+I2CPassword	src/lib_M24SR.c	/^uint8_t I2CPassword[16]={0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,$/;"	v
+I2C_ANSWER_READY	inc/drv_M24SR.h	/^	I2C_ANSWER_READY,$/;"	e	enum:__anon14
+I2C_GPO	inc/drv_M24SR.h	/^	I2C_GPO$/;"	e	enum:__anon13
+I2C_GPO_SYNCHRO_ALLOWED	inc/drv_I2C_M24SR.h	41;"	d
+I2C_PWD	inc/drv_M24SR.h	61;"	d
+ID	inc/lib_NDEF.h	/^	uint8_t ID[0xFF];$/;"	m	struct:__anon19
+IDLength	inc/lib_NDEF.h	/^	uint8_t IDLength;$/;"	m	struct:__anon19
+ID_LENGTH_FIELD	inc/lib_NDEF.h	51;"	d
+IL_Mask	inc/lib_NDEF.h	58;"	d
+INS	inc/drv_M24SR.h	/^  uint8_t INS;  \/* Operation code *\/$/;"	m	struct:__anon9
+INTERRUPT	inc/drv_M24SR.h	/^	INTERRUPT,$/;"	e	enum:__anon14
+ISO7816_DisableAllPassword	src/lib_ISO7816_Password.c	/^uint16_t ISO7816_DisableAllPassword(uint8_t* pSuperUserPassword)$/;"	f
+ISO7816_DisableReadPwd	src/lib_ISO7816_Password.c	/^uint16_t ISO7816_DisableReadPwd(uint8_t* pCurrentWritePassword )$/;"	f
+ISO7816_DisableWritePwd	src/lib_ISO7816_Password.c	/^uint16_t ISO7816_DisableWritePwd(uint8_t* pCurrentWritePassword)$/;"	f
+ISO7816_EnableReadPwd	src/lib_ISO7816_Password.c	/^uint16_t ISO7816_EnableReadPwd(uint8_t* pCurrentWritePassword, uint8_t* pNewPassword)$/;"	f
+ISO7816_EnableWritePwd	src/lib_ISO7816_Password.c	/^uint16_t ISO7816_EnableWritePwd(uint8_t* pCurrentWritePassword, uint8_t* pNewPassword)$/;"	f
+ISO_ENGLISH_CODE_STRING	inc/lib_NDEF.h	117;"	d
+ISO_ENGLISH_CODE_STRING_LENGTH	inc/lib_NDEF.h	118;"	d
+Information	inc/lib_NDEF_Email.h	/^	char Information[400];$/;"	m	struct:__anon4
+Information	inc/lib_NDEF_Geo.h	/^	char Information[100];$/;"	m	struct:__anon5
+Information	inc/lib_NDEF_SMS.h	/^	char Information[400];$/;"	m	struct:__anon20
+Information	inc/lib_NDEF_URI.h	/^	char Information[400];$/;"	m	struct:__anon2
+IsSBlock	src/drv_M24SR.c	/^static int8_t IsSBlock (uc8 *pBuffer)$/;"	f	file:
+JPEG	inc/lib_NDEF_Vcard.h	61;"	d
+JPEG_STRING_SIZE	inc/lib_NDEF_Vcard.h	79;"	d
+LB_STATUS_OFFSET	inc/drv_M24SR.h	49;"	d
+LC	inc/drv_M24SR.h	/^  uint8_t LC;         						\/* Data field length *\/	$/;"	m	struct:__anon10
+LE	inc/drv_M24SR.h	/^  uint8_t LE;          						\/* Expected length of data to be returned *\/$/;"	m	struct:__anon10
+LField	inc/lib_STProprietary_feature.h	/^	uint8_t LField;$/;"	m	struct:__anon3
+LField	inc/lib_TagType4.h	/^	uint8_t LField;$/;"	m	struct:__anon16
+LIMIT	inc/lib_NDEF_Vcard.h	63;"	d
+LIMIT_STRING_SIZE	inc/lib_NDEF_Vcard.h	81;"	d
+LINE_DESCR	inc/lib_NDEF_MyApp.h	44;"	d
+LINE_DESCR_END	inc/lib_NDEF_MyApp.h	46;"	d
+LINE_DESCR_END_STRING_SIZE	inc/lib_NDEF_MyApp.h	47;"	d
+LINE_DESCR_STRING_SIZE	inc/lib_NDEF_MyApp.h	45;"	d
+Latitude	inc/lib_NDEF_Geo.h	/^	char Latitude[20];$/;"	m	struct:__anon5
+LedBlinkConf	inc/lib_NDEF_MyApp.h	/^	sLedBlinkConfig LedBlinkConf;$/;"	m	struct:__anon8
+LedConf	inc/lib_NDEF_MyApp.h	/^	uint8_t LedConf[4];$/;"	m	struct:__anon6
+LineNb	inc/lib_NDEF_MyApp.h	/^	uint8_t LineNb;$/;"	m	struct:__anon7
+LineX	inc/lib_NDEF_MyApp.h	/^	sLineConfig LineX[8];$/;"	m	struct:__anon8
+Longitude	inc/lib_NDEF_Geo.h	/^	char Longitude[20];$/;"	m	struct:__anon5
+M24SR04_NDEF_MAX_SIZE	inc/lib_M24SR.h	40;"	d
+M24SR16_NDEF_MAX_SIZE	inc/lib_M24SR.h	41;"	d
+M24SR64_NDEF_MAX_SIZE	inc/lib_M24SR.h	42;"	d
+M24SR_ACTION_COMPLETED	inc/drv_M24SR.h	47;"	d
+M24SR_ADDR	inc/drv_I2C_M24SR.h	80;"	d
+M24SR_BuildIBlockCommand	src/drv_M24SR.c	/^static void M24SR_BuildIBlockCommand ( uc16 CommandStructure, C_APDU Command, uint16_t *NbByte , uint8_t *pCommand)$/;"	f	file:
+M24SR_CLA_NEEDED	inc/drv_M24SR.h	102;"	d
+M24SR_CMDSTRUCT_CHANGEREFDATA	inc/drv_M24SR.h	94;"	d
+M24SR_CMDSTRUCT_DISABLEVERIFREQ	inc/drv_M24SR.h	96;"	d
+M24SR_CMDSTRUCT_ENABLEVERIFREQ	inc/drv_M24SR.h	95;"	d
+M24SR_CMDSTRUCT_GPOSTATE	inc/drv_M24SR.h	98;"	d
+M24SR_CMDSTRUCT_READBINARY	inc/drv_M24SR.h	90;"	d
+M24SR_CMDSTRUCT_SELECTAPPLICATION	inc/drv_M24SR.h	86;"	d
+M24SR_CMDSTRUCT_SELECTCCFILE	inc/drv_M24SR.h	87;"	d
+M24SR_CMDSTRUCT_SELECTNDEFFILE	inc/drv_M24SR.h	88;"	d
+M24SR_CMDSTRUCT_SENDINTERRUPT	inc/drv_M24SR.h	97;"	d
+M24SR_CMDSTRUCT_UPDATEBINARY	inc/drv_M24SR.h	91;"	d
+M24SR_CMDSTRUCT_UPDATEFILETYPE	inc/drv_M24SR.h	89;"	d
+M24SR_CMDSTRUCT_VERIFYBINARYWITHPWD	inc/drv_M24SR.h	93;"	d
+M24SR_CMDSTRUCT_VERIFYBINARYWOPWD	inc/drv_M24SR.h	92;"	d
+M24SR_CRC_NBBYTE	inc/drv_M24SR.h	78;"	d
+M24SR_CRC_NEEDED	inc/drv_M24SR.h	109;"	d
+M24SR_ChangeReferenceData	src/drv_M24SR.c	/^uint16_t M24SR_ChangeReferenceData ( uc16 uPwdId,uc8 *pPwd )$/;"	f
+M24SR_CloseNDEFSession	src/lib_M24SR.c	/^uint16_t M24SR_CloseNDEFSession ( uint16_t NDEF_fileID )$/;"	f
+M24SR_ComputeCrc	src/drv_M24SR.c	/^static uint16_t M24SR_ComputeCrc(uc8 *Data, uint8_t Length)$/;"	f	file:
+M24SR_DATA_NEEDED	inc/drv_M24SR.h	107;"	d
+M24SR_DESELECTREQUEST_NBBYTE	inc/drv_M24SR.h	80;"	d
+M24SR_DESELECTRESPONSE_NBBYTE	inc/drv_M24SR.h	81;"	d
+M24SR_DID_NEEDED	inc/drv_M24SR.h	111;"	d
+M24SR_DISCOVERY_APP_STRING	inc/lib_NDEF.h	75;"	d
+M24SR_DISCOVERY_APP_STRING_LENGTH	inc/lib_NDEF.h	76;"	d
+M24SR_DISCOVERY_APP_TYPE	inc/lib_NDEF.h	/^	M24SR_DISCOVERY_APP_TYPE $/;"	e	enum:__anon18
+M24SR_Deselect	src/drv_M24SR.c	/^uint16_t M24SR_Deselect ( void )$/;"	f
+M24SR_DisableAllPassword	src/lib_M24SR.c	/^uint16_t M24SR_DisableAllPassword( uint8_t* pSuperUserPassword)$/;"	f
+M24SR_DisablePermanentState	src/drv_M24SR.c	/^uint16_t M24SR_DisablePermanentState ( uc16 uReadOrWrite  )$/;"	f
+M24SR_DisableReadOnly	src/lib_M24SR.c	/^uint16_t M24SR_DisableReadOnly( uint8_t* pCurrentWritePassword)$/;"	f
+M24SR_DisableReadPassword	src/lib_M24SR.c	/^uint16_t M24SR_DisableReadPassword( uint8_t* pCurrentWritePassword)$/;"	f
+M24SR_DisableVerificationRequirement	src/drv_M24SR.c	/^uint16_t M24SR_DisableVerificationRequirement ( uc16 uReadOrWrite  )$/;"	f
+M24SR_DisableWriteOnly	src/lib_M24SR.c	/^uint16_t M24SR_DisableWriteOnly( uint8_t* pCurrentWritePassword)$/;"	f
+M24SR_DisableWritePassword	src/lib_M24SR.c	/^uint16_t M24SR_DisableWritePassword( uint8_t* pCurrentWritePassword)$/;"	f
+M24SR_ERRORCODE_CLASSNOTSUPPORTED	inc/drv_I2C_M24SR.h	100;"	d
+M24SR_ERRORCODE_COMMANDINCORRECT	inc/drv_I2C_M24SR.h	92;"	d
+M24SR_ERRORCODE_DAFAULT	inc/drv_I2C_M24SR.h	101;"	d
+M24SR_ERRORCODE_ENDOFFILE	inc/drv_I2C_M24SR.h	85;"	d
+M24SR_ERRORCODE_FILENOTFOUND	inc/drv_I2C_M24SR.h	96;"	d
+M24SR_ERRORCODE_FILEOVERFLOW	inc/drv_I2C_M24SR.h	84;"	d
+M24SR_ERRORCODE_FILEOVERFLOWLC	inc/drv_I2C_M24SR.h	97;"	d
+M24SR_ERRORCODE_INCORRECTP1P2	inc/drv_I2C_M24SR.h	98;"	d
+M24SR_ERRORCODE_INCORRECTPARAMETER	inc/drv_I2C_M24SR.h	95;"	d
+M24SR_ERRORCODE_INSNOTSUPPORTED	inc/drv_I2C_M24SR.h	99;"	d
+M24SR_ERRORCODE_PASSWORDINCORRECT1RETRY	inc/drv_I2C_M24SR.h	88;"	d
+M24SR_ERRORCODE_PASSWORDINCORRECT2RETRY	inc/drv_I2C_M24SR.h	87;"	d
+M24SR_ERRORCODE_PASSWORDREQUIRED	inc/drv_I2C_M24SR.h	86;"	d
+M24SR_ERRORCODE_REFERENCEDATANOTUSABLE	inc/drv_I2C_M24SR.h	94;"	d
+M24SR_ERRORCODE_RFSESSIONKILLED	inc/drv_I2C_M24SR.h	89;"	d
+M24SR_ERRORCODE_SECURITYSTATUS	inc/drv_I2C_M24SR.h	93;"	d
+M24SR_ERRORCODE_UNSUCCESSFULUPDATING	inc/drv_I2C_M24SR.h	90;"	d
+M24SR_ERRORCODE_WRONGHLENGTH	inc/drv_I2C_M24SR.h	91;"	d
+M24SR_ERROR_CRC	inc/drv_I2C_M24SR.h	107;"	d
+M24SR_ERROR_DEFAULT	inc/drv_I2C_M24SR.h	105;"	d
+M24SR_ERROR_I2CTIMEOUT	inc/drv_I2C_M24SR.h	106;"	d
+M24SR_ERROR_NACK	inc/drv_I2C_M24SR.h	108;"	d
+M24SR_ERROR_NBATEMPT	inc/drv_I2C_M24SR.h	110;"	d
+M24SR_ERROR_NOACKNOWLEDGE	inc/drv_I2C_M24SR.h	111;"	d
+M24SR_ERROR_PARAMETER	inc/drv_I2C_M24SR.h	109;"	d
+M24SR_EnablePermanentState	src/drv_M24SR.c	/^uint16_t M24SR_EnablePermanentState ( uc16 uReadOrWrite  )$/;"	f
+M24SR_EnableReadOnly	src/lib_M24SR.c	/^uint16_t M24SR_EnableReadOnly( uint8_t* pCurrentWritePassword)$/;"	f
+M24SR_EnableReadPassword	src/lib_M24SR.c	/^uint16_t M24SR_EnableReadPassword( uint8_t* pCurrentWritePassword, uint8_t* pNewPassword)$/;"	f
+M24SR_EnableVerificationRequirement	src/drv_M24SR.c	/^uint16_t M24SR_EnableVerificationRequirement ( uc16 uReadOrWrite  )$/;"	f
+M24SR_EnableWriteOnly	src/lib_M24SR.c	/^uint16_t M24SR_EnableWriteOnly( uint8_t* pCurrentWritePassword)$/;"	f
+M24SR_EnableWritePassword	src/lib_M24SR.c	/^uint16_t M24SR_EnableWritePassword( uint8_t* pCurrentWritePassword, uint8_t* pNewPassword)$/;"	f
+M24SR_FLAG_TIMEOUT	inc/drv_I2C_M24SR.h	120;"	d
+M24SR_FWTExtension	src/drv_M24SR.c	/^static uint16_t M24SR_FWTExtension ( uint8_t FWTbyte )$/;"	f	file:
+M24SR_ForceReadData	src/lib_M24SR.c	/^uint16_t M24SR_ForceReadData ( uint16_t Offset , uint16_t DataSize , uint8_t* pData)$/;"	f
+M24SR_Format	src/lib_M24SR.c	/^uint16_t M24SR_Format ( uint8_t NumberOfFile, uint8_t* pNewReadPassWord, uint8_t* pNewWritePassWord )$/;"	f
+M24SR_GPIO_BLOCK_CLK	inc/drv_I2C_M24SR.h	71;"	d
+M24SR_GPO_MGMT	inc/drv_M24SR.h	/^}M24SR_GPO_MGMT;$/;"	t	typeref:enum:__anon14
+M24SR_GPO_MODE	inc/drv_M24SR.h	/^}M24SR_GPO_MODE;$/;"	t	typeref:enum:__anon13
+M24SR_GPO_PIN	inc/drv_I2C_M24SR.h	65;"	d
+M24SR_GPO_PIN_PORT	inc/drv_I2C_M24SR.h	66;"	d
+M24SR_GetNDEFFileId	src/lib_M24SR.c	/^uint16_t M24SR_GetNDEFFileId ( uint16_t *NDEF_fileID )$/;"	f
+M24SR_GetSession	src/drv_M24SR.c	/^uint16_t M24SR_GetSession ( void )$/;"	f
+M24SR_I2C	inc/drv_I2C_M24SR.h	74;"	d
+M24SR_I2CInit	src/drv_I2C_M24SR.c	/^void M24SR_I2CInit ( void )$/;"	f
+M24SR_I2CTokenRelease	src/drv_I2C_M24SR.c	/^int8_t M24SR_I2CTokenRelease ( void )$/;"	f
+M24SR_I2C_BLOCK_CLK	inc/drv_I2C_M24SR.h	75;"	d
+M24SR_I2C_CLOCKSPEED	inc/drv_I2C_M24SR.h	76;"	d
+M24SR_I2C_POLLING	inc/drv_I2C_M24SR.h	79;"	d
+M24SR_I2C_TIMEOUT	inc/drv_I2C_M24SR.h	78;"	d
+M24SR_INS_NEEDED	inc/drv_M24SR.h	103;"	d
+M24SR_Init	src/drv_M24SR.c	/^void M24SR_Init( void )$/;"	f
+M24SR_InitStructure	src/drv_M24SR.c	/^static void M24SR_InitStructure ( void )$/;"	f	file:
+M24SR_Initialization	src/lib_M24SR.c	/^uint16_t M24SR_Initialization ( uint8_t* CCBuffer, uint8_t size )$/;"	f
+M24SR_IsAnswerReady	src/drv_I2C_M24SR.c	/^int8_t M24SR_IsAnswerReady ( void )$/;"	f
+M24SR_IsCorrectCRC16Residue	src/drv_M24SR.c	/^static uint16_t M24SR_IsCorrectCRC16Residue (uc8 *DataIn,uc8 Length)$/;"	f	file:
+M24SR_KILLSESSION	inc/drv_M24SR.h	74;"	d
+M24SR_KillSession	src/drv_M24SR.c	/^uint16_t M24SR_KillSession ( void )$/;"	f
+M24SR_LC_NEEDED	inc/drv_M24SR.h	106;"	d
+M24SR_LE_NEEDED	inc/drv_M24SR.h	108;"	d
+M24SR_LONG_TIMEOUT	inc/drv_I2C_M24SR.h	121;"	d
+M24SR_MASK_BLOCK	inc/drv_M24SR.h	121;"	d
+M24SR_MASK_IBLOCK	inc/drv_M24SR.h	122;"	d
+M24SR_MASK_RBLOCK	inc/drv_M24SR.h	123;"	d
+M24SR_MASK_SBLOCK	inc/drv_M24SR.h	124;"	d
+M24SR_ManageGPO	src/lib_M24SR.c	/^uint16_t M24SR_ManageGPO( uc8 GPO_config, uc8 mode)$/;"	f
+M24SR_ManageI2CGPO	src/drv_M24SR.c	/^uint16_t M24SR_ManageI2CGPO( uc8 GPO_I2Cconfig)$/;"	f
+M24SR_ManageRFGPO	src/drv_M24SR.c	/^uint16_t M24SR_ManageRFGPO( uc8 GPO_RFconfig)$/;"	f
+M24SR_NBBYTE_INVALID	inc/drv_M24SR.h	51;"	d
+M24SR_OFFSET_CLASS	inc/drv_M24SR.h	115;"	d
+M24SR_OFFSET_INS	inc/drv_M24SR.h	116;"	d
+M24SR_OFFSET_P1	inc/drv_M24SR.h	117;"	d
+M24SR_OFFSET_PCB	inc/drv_M24SR.h	114;"	d
+M24SR_OPENSESSION	inc/drv_M24SR.h	73;"	d
+M24SR_OpenNDEFSession	src/lib_M24SR.c	/^uint16_t M24SR_OpenNDEFSession ( uint16_t NDEF_fileID, uint16_t Priority )$/;"	f
+M24SR_P1_NEEDED	inc/drv_M24SR.h	104;"	d
+M24SR_P2_NEEDED	inc/drv_M24SR.h	105;"	d
+M24SR_PASSWORD_NBBYTE	inc/drv_M24SR.h	83;"	d
+M24SR_PCB_NEEDED	inc/drv_M24SR.h	101;"	d
+M24SR_PWD_CORRECT	inc/drv_M24SR.h	67;"	d
+M24SR_PWD_NEEDED	inc/drv_M24SR.h	65;"	d
+M24SR_PWD_NOT_NEEDED	inc/drv_M24SR.h	64;"	d
+M24SR_PollI2C	src/drv_I2C_M24SR.c	/^int8_t M24SR_PollI2C ( void )$/;"	f
+M24SR_READ_MAX_NBBYTE	inc/lib_M24SR.h	49;"	d
+M24SR_RFConfig	src/drv_M24SR.c	/^void M24SR_RFConfig( uc8 OnOffChoice)$/;"	f
+M24SR_RFConfig_Hard	src/drv_I2C_M24SR.c	/^void M24SR_RFConfig_Hard( uc8 OnOffChoice)$/;"	f
+M24SR_RFDIS_PIN	inc/drv_I2C_M24SR.h	68;"	d
+M24SR_RFDIS_PIN_PORT	inc/drv_I2C_M24SR.h	69;"	d
+M24SR_ReadBinary	src/drv_M24SR.c	/^uint16_t M24SR_ReadBinary ( uc16 Offset ,uc8 NbByteToRead , uint8_t *pBufferRead )$/;"	f
+M24SR_ReadData	src/lib_M24SR.c	/^uint16_t M24SR_ReadData ( uint16_t Offset , uint16_t DataSize , uint8_t* pData)$/;"	f
+M24SR_ReadPrivateData	src/lib_M24SR.c	/^uint16_t M24SR_ReadPrivateData ( uint16_t Offset , uint16_t DataSize , uint8_t* pData, uint8_t* pReadPassword)$/;"	f
+M24SR_ReceiveI2Cbuffer	src/drv_I2C_M24SR.c	/^int8_t M24SR_ReceiveI2Cbuffer ( uint8_t NbByte , uint8_t *pBuffer )$/;"	f
+M24SR_ReceiveI2Cresponse	src/drv_I2C_M24SR.c	/^int8_t M24SR_ReceiveI2Cresponse ( uint8_t NbByte , uint8_t *pBuffer )$/;"	f
+M24SR_SCL_PIN	inc/drv_I2C_M24SR.h	61;"	d
+M24SR_SCL_PIN_PORT	inc/drv_I2C_M24SR.h	63;"	d
+M24SR_SCL_PIN_SOURCE	inc/drv_I2C_M24SR.h	62;"	d
+M24SR_SDA_PIN	inc/drv_I2C_M24SR.h	57;"	d
+M24SR_SDA_PIN_PORT	inc/drv_I2C_M24SR.h	59;"	d
+M24SR_SDA_PIN_SOURCE	inc/drv_I2C_M24SR.h	58;"	d
+M24SR_STATUSRESPONSE_NBBYTE	inc/drv_M24SR.h	79;"	d
+M24SR_STATUS_NBBYTE	inc/drv_M24SR.h	77;"	d
+M24SR_STATUS_SUCCESS	inc/drv_I2C_M24SR.h	104;"	d
+M24SR_STReadBinary	src/drv_M24SR.c	/^uint16_t M24SR_STReadBinary ( uc16 Offset, uc8 NbByteToRead, uint8_t *pBufferRead )$/;"	f
+M24SR_SelectApplication	src/drv_M24SR.c	/^uint16_t M24SR_SelectApplication ( void )$/;"	f
+M24SR_SelectCCfile	src/drv_M24SR.c	/^uint16_t M24SR_SelectCCfile ( void )$/;"	f
+M24SR_SelectNDEFfile	src/drv_M24SR.c	/^uint16_t M24SR_SelectNDEFfile ( uc16 NDEFfileId )$/;"	f
+M24SR_SelectSystemfile	src/drv_M24SR.c	/^uint16_t M24SR_SelectSystemfile ( void )$/;"	f
+M24SR_SendI2Ccommand	src/drv_I2C_M24SR.c	/^int8_t M24SR_SendI2Ccommand ( uc8 NbByte , uc8 *pBuffer )$/;"	f
+M24SR_SendInterrupt	src/drv_M24SR.c	/^uint16_t M24SR_SendInterrupt ( void  )$/;"	f
+M24SR_SetI2CSynchroMode	src/drv_I2C_M24SR.c	/^void M24SR_SetI2CSynchroMode( uc8 mode )$/;"	f
+M24SR_StateControl	src/drv_M24SR.c	/^uint16_t M24SR_StateControl ( uc8 uSetOrReset )$/;"	f
+M24SR_UpdateBinary	src/drv_M24SR.c	/^uint16_t M24SR_UpdateBinary ( uc16 Offset ,uc8 NbByteToWrite,uc8 *pDataToWrite )$/;"	f
+M24SR_UpdateCrc	src/drv_M24SR.c	/^static uint16_t M24SR_UpdateCrc (uint8_t ch, uint16_t *lpwCrc)$/;"	f	file:
+M24SR_UpdateFileType	src/drv_M24SR.c	/^uint16_t M24SR_UpdateFileType ( u8 FileType )$/;"	f
+M24SR_Verify	src/drv_M24SR.c	/^uint16_t M24SR_Verify ( uc16 uPwdId,uc8 NbPwdByte ,uc8 *pPwd )$/;"	f
+M24SR_WAITINGTIME_GPO	inc/drv_I2C_M24SR.h	/^	M24SR_WAITINGTIME_GPO$/;"	e	enum:__anon21
+M24SR_WAITINGTIME_MGMT	inc/drv_I2C_M24SR.h	/^}M24SR_WAITINGTIME_MGMT; $/;"	t	typeref:enum:__anon21
+M24SR_WAITINGTIME_POLLING	inc/drv_I2C_M24SR.h	/^	M24SR_WAITINGTIME_POLLING,$/;"	e	enum:__anon21
+M24SR_WAITINGTIME_TIMEOUT	inc/drv_I2C_M24SR.h	/^	M24SR_WAITINGTIME_TIMEOUT,$/;"	e	enum:__anon21
+M24SR_WAITINGTIME_UNKNOWN	inc/drv_I2C_M24SR.h	/^	M24SR_WAITINGTIME_UNKNOWN= 0,$/;"	e	enum:__anon21
+M24SR_WATINGTIMEEXTRESPONSE_NBBYTE	inc/drv_M24SR.h	82;"	d
+M24SR_WRITE_MAX_NBBYTE	inc/lib_M24SR.h	50;"	d
+M24SR_WriteData	src/lib_M24SR.c	/^uint16_t M24SR_WriteData ( uint16_t Offset , uint16_t DataSize , uint8_t* pData)$/;"	f
+M24SR_WritePrivateData	src/lib_M24SR.c	/^uint16_t M24SR_WritePrivateData ( uint16_t Offset , uint16_t DataSize , uint8_t* pData, uint8_t* pWritePassword)$/;"	f
+MB_Mask	inc/lib_NDEF.h	54;"	d
+MESSAGE_BEGIN_STRING	inc/lib_NDEF.h	108;"	d
+MESSAGE_BEGIN_STRING_LENGTH	inc/lib_NDEF.h	109;"	d
+ME_Mask	inc/lib_NDEF.h	55;"	d
+MaxReadByte	inc/lib_TagType4.h	/^	uint16_t MaxReadByte;$/;"	m	struct:__anon16
+MaxWriteByte	inc/lib_TagType4.h	/^	uint16_t MaxWriteByte;$/;"	m	struct:__anon16
+Message	inc/lib_NDEF_Email.h	/^	char Message[400];$/;"	m	struct:__anon4
+Message	inc/lib_NDEF_SMS.h	/^	char Message[400];$/;"	m	struct:__anon20
+NDEFFileMaxSize	inc/lib_STProprietary_feature.h	/^	uint16_t NDEFFileMaxSize;$/;"	m	struct:__anon3
+NDEFFileMaxSize	inc/lib_TagType4.h	/^	uint16_t NDEFFileMaxSize;$/;"	m	struct:__anon16
+NDEFSessionOpenID	src/lib_M24SR.c	/^static uint32_t NDEFSessionOpenID=NDEF_SESSION_CLOSED;$/;"	v	file:
+NDEF_ACTION_COMPLETED	inc/lib_wrapper.h	33;"	d
+NDEF_AddAAR	src/lib_NDEF_AAR.c	/^uint16_t NDEF_AddAAR ( sAARInfo *pAARStruct )$/;"	f
+NDEF_Buffer	src/lib_TagType4.c	/^uint8_t NDEF_Buffer [NDEF_MAX_SIZE];$/;"	v
+NDEF_ExtractVcard	src/lib_NDEF_Vcard.c	/^static void NDEF_ExtractVcard ( sRecordInfo *pRecordStruct, sVcardInfo *pVcardStruct )$/;"	f	file:
+NDEF_Extract_M24SRDiscoveryApp_Input	src/lib_NDEF_MyApp.c	/^static void NDEF_Extract_M24SRDiscoveryApp_Input ( sRecordInfo *pRecordStruct, sMyAppInfo *pMyAppStruct )$/;"	f	file:
+NDEF_FILE_ID	inc/drv_M24SR.h	56;"	d
+NDEF_FileID	src/lib_M24SR.c	/^static uint16_t NDEF_FileID = 0xDEAD;$/;"	v	file:
+NDEF_FillEmailStruct	src/lib_NDEF_Email.c	/^static void NDEF_FillEmailStruct( uint8_t* pPayload, uint32_t PayloadSize, sEmailInfo *pEmailStruct)$/;"	f	file:
+NDEF_FillGeoStruct	src/lib_NDEF_Geo.c	/^static void NDEF_FillGeoStruct( uint8_t* pPayload, uint32_t PayloadSize, sGeoInfo *pGeoStruct)$/;"	f	file:
+NDEF_FillSMSStruct	src/lib_NDEF_SMS.c	/^static void NDEF_FillSMSStruct( uint8_t* pPayload, uint32_t PayloadSize, sSMSInfo *pSMSStruct)$/;"	f	file:
+NDEF_FillVcardStruct	src/lib_NDEF_Vcard.c	/^static void NDEF_FillVcardStruct( uint8_t* pPayload, uint32_t PayloadSize, char* pKeyWord, uint32_t SizeOfKeyWord, uint8_t* pString)$/;"	f	file:
+NDEF_IdentifyNDEF	src/lib_NDEF.c	/^uint16_t NDEF_IdentifyNDEF ( sRecordInfo *pRecordStruct, uint8_t* pNDEF )$/;"	f
+NDEF_IdentifySPRecord	src/lib_NDEF.c	/^static uint16_t NDEF_IdentifySPRecord ( sRecordInfo *pRecordStruct, uint8_t* pPayload )$/;"	f	file:
+NDEF_IsNDEFPresent	src/lib_NDEF.c	/^static uint16_t NDEF_IsNDEFPresent ( void )$/;"	f	file:
+NDEF_MAX_SIZE	inc/lib_wrapper.h	31;"	d
+NDEF_ParseForumExternalType	src/lib_NDEF.c	/^static void NDEF_ParseForumExternalType ( sRecordInfo *pRecordStruct )$/;"	f	file:
+NDEF_ParseMediaType	src/lib_NDEF.c	/^static void NDEF_ParseMediaType ( sRecordInfo *pRecordStruct )$/;"	f	file:
+NDEF_ParseRecordHeader	src/lib_NDEF.c	/^static uint16_t NDEF_ParseRecordHeader ( sRecordInfo *pRecordStruct )$/;"	f	file:
+NDEF_ParseSP	src/lib_NDEF.c	/^static void NDEF_ParseSP(sRecordInfo *pRecordStruct)$/;"	f	file:
+NDEF_ParseURI	src/lib_NDEF.c	/^static void NDEF_ParseURI(sRecordInfo *pRecordStruct)$/;"	f	file:
+NDEF_ParseWellKnownType	src/lib_NDEF.c	/^static void NDEF_ParseWellKnownType ( sRecordInfo *pRecordStruct )$/;"	f	file:
+NDEF_Parse_WellKnowType	src/lib_NDEF_URI.c	/^static void NDEF_Parse_WellKnowType(sRecordInfo *pRecordStruct, sURI_Info* pURI )$/;"	f	file:
+NDEF_ReadEmail	src/lib_NDEF_Email.c	/^uint16_t NDEF_ReadEmail(sRecordInfo *pRecordStruct, sEmailInfo *pEmailStruct)$/;"	f
+NDEF_ReadGeo	src/lib_NDEF_Geo.c	/^uint16_t NDEF_ReadGeo(sRecordInfo *pRecordStruct, sGeoInfo *pGeoStruct)$/;"	f
+NDEF_ReadMyApp	src/lib_NDEF_MyApp.c	/^uint16_t NDEF_ReadMyApp(sRecordInfo *pRecordStruct, sMyAppInfo *pMyAppStruct)$/;"	f
+NDEF_ReadNDEF	src/lib_NDEF.c	/^uint16_t NDEF_ReadNDEF( uint8_t* pNDEF)$/;"	f
+NDEF_ReadSMS	src/lib_NDEF_SMS.c	/^uint16_t NDEF_ReadSMS(sRecordInfo *pRecordStruct, sSMSInfo *pSMSStruct)$/;"	f
+NDEF_ReadURI	src/lib_NDEF_URI.c	/^uint16_t NDEF_ReadURI(sRecordInfo *pRecordStruct, sURI_Info *pURI)$/;"	f
+NDEF_ReadURI_Email	src/lib_NDEF_Email.c	/^static void NDEF_ReadURI_Email ( sRecordInfo *pRecordStruct, sEmailInfo *pEmailStruct )$/;"	f	file:
+NDEF_ReadURI_Geo	src/lib_NDEF_Geo.c	/^static void NDEF_ReadURI_Geo ( sRecordInfo *pRecordStruct, sGeoInfo *pGeoStruct )$/;"	f	file:
+NDEF_ReadURI_SMS	src/lib_NDEF_SMS.c	/^static void NDEF_ReadURI_SMS ( sRecordInfo *pRecordStruct, sSMSInfo *pSMSStruct )$/;"	f	file:
+NDEF_ReadVcard	src/lib_NDEF_Vcard.c	/^uint16_t NDEF_ReadVcard ( sRecordInfo *pRecordStruct, sVcardInfo *pVcardStruct )$/;"	f
+NDEF_SESSION_CLOSED	inc/lib_M24SR.h	53;"	d
+NDEF_SIZE_OFFSET	inc/lib_NDEF.h	46;"	d
+NDEF_Type	inc/lib_NDEF.h	/^	NDEF_TypeDef NDEF_Type;  \/* to store identification ID for application *\/$/;"	m	struct:__anon19
+NDEF_TypeDef	inc/lib_NDEF.h	/^} NDEF_TypeDef;$/;"	t	typeref:enum:__anon18
+NDEF_WriteEmail	src/lib_NDEF_Email.c	/^uint16_t NDEF_WriteEmail ( sEmailInfo *pEmailStruct )$/;"	f
+NDEF_WriteGeo	src/lib_NDEF_Geo.c	/^uint16_t NDEF_WriteGeo ( sGeoInfo *pGeoStruct )$/;"	f
+NDEF_WriteMyApp	src/lib_NDEF_MyApp.c	/^uint16_t NDEF_WriteMyApp(sMyAppInfo *pMyAppStruct)$/;"	f
+NDEF_WriteNDEF	src/lib_NDEF.c	/^uint16_t NDEF_WriteNDEF( uint8_t *pNDEF)$/;"	f
+NDEF_WriteSMS	src/lib_NDEF_SMS.c	/^uint16_t NDEF_WriteSMS ( sSMSInfo *pSMSStruct )$/;"	f
+NDEF_WriteURI	src/lib_NDEF_URI.c	/^uint16_t NDEF_WriteURI ( sURI_Info *pURI)$/;"	f
+NDEF_WriteVcard	src/lib_NDEF_Vcard.c	/^uint16_t NDEF_WriteVcard ( sVcardInfo *pVcardStruct )$/;"	f
+NbOfRecordInSPPayload	inc/lib_NDEF.h	/^	uint8_t NbOfRecordInSPPayload;$/;"	m	struct:__anon19
+NumberCCByte	inc/lib_TagType4.h	/^	uint16_t NumberCCByte;$/;"	m	struct:__anon16
+ORG	inc/lib_NDEF_Vcard.h	59;"	d
+ORG_STRING_SIZE	inc/lib_NDEF_Vcard.h	77;"	d
+OpenNDEFSession	inc/lib_wrapper.h	42;"	d
+Org	inc/lib_NDEF_Vcard.h	/^	char Org[80];$/;"	m	struct:__anon15
+P1	inc/drv_M24SR.h	/^  uint8_t P1;   \/* Selection Mode *\/$/;"	m	struct:__anon9
+P2	inc/drv_M24SR.h	/^  uint8_t P2;   \/* Selection Option *\/$/;"	m	struct:__anon9
+PakageName	inc/lib_NDEF_AAR.h	/^	char PakageName[80];$/;"	m	struct:__anon1
+PayloadBufferAdd	inc/lib_NDEF.h	/^	uint32_t PayloadBufferAdd;    \/* add where payload content has been stored *\/$/;"	m	struct:__anon19
+PayloadLength0	inc/lib_NDEF.h	/^	uint8_t PayloadLength0;$/;"	m	struct:__anon19
+PayloadLength1	inc/lib_NDEF.h	/^	uint8_t PayloadLength1;$/;"	m	struct:__anon19
+PayloadLength2	inc/lib_NDEF.h	/^	uint8_t PayloadLength2;$/;"	m	struct:__anon19
+PayloadLength3	inc/lib_NDEF.h	/^	uint8_t PayloadLength3;$/;"	m	struct:__anon19
+PayloadOffset	inc/lib_NDEF.h	/^	uint16_t PayloadOffset;$/;"	m	struct:__anon19
+PhoneNumber	inc/lib_NDEF_SMS.h	/^	char PhoneNumber[16];$/;"	m	struct:__anon20
+READ_PWD	inc/drv_M24SR.h	59;"	d
+RECORD_FLAG_FIELD	inc/lib_NDEF.h	49;"	d
+RF_GPO	inc/drv_M24SR.h	/^	RF_GPO= 0,$/;"	e	enum:__anon13
+R_APDU	inc/drv_M24SR.h	/^} R_APDU;$/;"	t	typeref:struct:__anon12
+ReadAccess	inc/lib_STProprietary_feature.h	/^	uint8_t ReadAccess;$/;"	m	struct:__anon3
+ReadAccess	inc/lib_TagType4.h	/^	uint8_t ReadAccess;$/;"	m	struct:__anon16
+ReadData	inc/lib_wrapper.h	45;"	d
+ReadPrivateData	inc/lib_wrapper.h	49;"	d
+RecordFlags	inc/lib_NDEF.h	/^  uint8_t RecordFlags;$/;"	m	struct:__anon19
+RecordStruct	src/lib_TagType4.c	/^sRecordInfo RecordStruct;$/;"	v
+SESSION_OPENED	inc/drv_M24SR.h	/^	SESSION_OPENED,$/;"	e	enum:__anon14
+SMARTPOSTER_TYPE	inc/lib_NDEF.h	/^	SMARTPOSTER_TYPE,$/;"	e	enum:__anon18
+SMART_POSTER_TYPE_STRING	inc/lib_NDEF.h	84;"	d
+SMART_POSTER_TYPE_STRING_LENGTH	inc/lib_NDEF.h	85;"	d
+SMS_TAG	inc/lib_TagType4.h	/^	SMS_TAG,$/;"	e	enum:__anon17
+SMS_TYPE_STRING	inc/lib_NDEF.h	90;"	d
+SMS_TYPE_STRING_LENGTH	inc/lib_NDEF.h	91;"	d
+SPRecordStruct1	src/lib_NDEF.c	/^sRecordInfo SPRecordStruct1, SPRecordStruct2, SPRecordStruct3;$/;"	v
+SPRecordStruct2	src/lib_NDEF.c	/^sRecordInfo SPRecordStruct1, SPRecordStruct2, SPRecordStruct3;$/;"	v
+SPRecordStruct3	src/lib_NDEF.c	/^sRecordInfo SPRecordStruct1, SPRecordStruct2, SPRecordStruct3;$/;"	v
+SPRecordStructAdd	inc/lib_NDEF.h	/^	uint32_t SPRecordStructAdd[SP_MAX_RECORD]; \/*in case of smart poster array to store add of other sRecordInfo struct *\/$/;"	m	struct:__anon19
+SPRecordStructAdd	src/lib_NDEF.c	/^uint32_t SPRecordStructAdd[SP_MAX_RECORD] = { (uint32_t)&SPRecordStruct1, (uint32_t)&SPRecordStruct2, (uint32_t)&SPRecordStruct3 };$/;"	v
+SP_MAX_RECORD	inc/lib_NDEF.h	70;"	d
+SR_Mask	inc/lib_NDEF.h	57;"	d
+STATE_CONTROL	inc/drv_M24SR.h	/^	STATE_CONTROL$/;"	e	enum:__anon14
+STProprietary_DisableReadOnly	src/lib_STProprietary_feature.c	/^uint16_t STProprietary_DisableReadOnly(uint8_t* pCurrentWritePassword )$/;"	f
+STProprietary_DisableWriteOnly	src/lib_STProprietary_feature.c	/^uint16_t STProprietary_DisableWriteOnly(uint8_t* pCurrentWritePassword)$/;"	f
+STProprietary_EnableReadOnly	src/lib_STProprietary_feature.c	/^uint16_t STProprietary_EnableReadOnly(uint8_t* pCurrentWritePassword)$/;"	f
+STProprietary_EnableWriteOnly	src/lib_STProprietary_feature.c	/^uint16_t STProprietary_EnableWriteOnly(uint8_t* pCurrentWritePassword)$/;"	f
+STProprietary_Format	src/lib_STProprietary_feature.c	/^uint16_t STProprietary_Format(uint8_t *pNewReadPassword, uint8_t* pNewWritePassword)$/;"	f
+STProprietary_GPOConfig	src/lib_STProprietary_feature.c	/^uint16_t STProprietary_GPOConfig(uc8 GPO_config, uc8 mode)$/;"	f
+STProprietary_ReadData	src/lib_STProprietary_feature.c	/^uint16_t STProprietary_ReadData(uint8_t FileNumber, uint16_t offset, uint16_t size, uint8_t * pData, uint8_t* pReadPassword)$/;"	f
+STProprietary_WriteData	src/lib_STProprietary_feature.c	/^uint16_t STProprietary_WriteData(uint8_t FileNumber, uint16_t offset, uint16_t size, uint8_t * pData, uint8_t* pWritePassword)$/;"	f
+SUBJECT_BEGIN_STRING	inc/lib_NDEF.h	105;"	d
+SUBJECT_BEGIN_STRING_LENGTH	inc/lib_NDEF.h	106;"	d
+SW1	inc/drv_M24SR.h	/^  uint8_t SW1;         						 \/* Command Processing status *\/$/;"	m	struct:__anon12
+SW2	inc/drv_M24SR.h	/^  uint8_t SW2;          						\/* Command Processing qualification *\/$/;"	m	struct:__anon12
+SYSTEM_FILE_ID	inc/drv_M24SR.h	54;"	d
+SYS_FORMAT_CONFIG	inc/lib_STProprietary_feature.h	39;"	d
+SYS_NUMBER_OF_MANAGED_FILE	inc/lib_STProprietary_feature.h	37;"	d
+SYS_NUMBER_OF_PRIVATE_FILE	inc/lib_STProprietary_feature.h	38;"	d
+Speed	inc/lib_NDEF_MyApp.h	/^	uint8_t Speed;$/;"	m	struct:__anon6
+String	inc/lib_NDEF_MyApp.h	/^	char String[20];$/;"	m	struct:__anon7
+Subject	inc/lib_NDEF_Email.h	/^	char Subject[100];$/;"	m	struct:__anon4
+TAKE_SESSION	inc/lib_M24SR.h	46;"	d
+TEXT_TAG	inc/lib_TagType4.h	/^	TEXT_TAG,$/;"	e	enum:__anon17
+TEXT_TYPE	inc/lib_NDEF.h	/^	TEXT_TYPE,$/;"	e	enum:__anon18
+TEXT_TYPE_STRING	inc/lib_NDEF.h	114;"	d
+TEXT_TYPE_STRING_LENGTH	inc/lib_NDEF.h	115;"	d
+TField	inc/lib_STProprietary_feature.h	/^	uint8_t TField;$/;"	m	struct:__anon3
+TField	inc/lib_TagType4.h	/^	uint8_t TField;$/;"	m	struct:__anon16
+TITLE	inc/lib_NDEF_Vcard.h	58;"	d
+TITLE_STRING_SIZE	inc/lib_NDEF_Vcard.h	76;"	d
+TNF_AbsoluteURI	inc/lib_NDEF.h	64;"	d
+TNF_Empty	inc/lib_NDEF.h	61;"	d
+TNF_Mask	inc/lib_NDEF.h	59;"	d
+TNF_MediaType	inc/lib_NDEF.h	63;"	d
+TNF_NFCForumExternal	inc/lib_NDEF.h	65;"	d
+TNF_Reserved	inc/lib_NDEF.h	68;"	d
+TNF_Unchanged	inc/lib_NDEF.h	67;"	d
+TNF_Unknown	inc/lib_NDEF.h	66;"	d
+TNF_WellKnown	inc/lib_NDEF.h	62;"	d
+TOGGLE	inc/drv_M24SR.h	44;"	d
+TT4_AddAAR	src/lib_TagType4.c	/^uint16_t TT4_AddAAR(sAARInfo *pAAR)$/;"	f
+TT4_Init	src/lib_TagType4.c	/^uint16_t TT4_Init (void)$/;"	f
+TT4_ReadEmail	src/lib_TagType4.c	/^uint16_t TT4_ReadEmail (sEmailInfo *pEmailStruct)$/;"	f
+TT4_ReadGeo	src/lib_TagType4.c	/^uint16_t TT4_ReadGeo(sGeoInfo *pGeo)$/;"	f
+TT4_ReadMyApp	src/lib_TagType4.c	/^uint16_t TT4_ReadMyApp(sMyAppInfo *pMyAppStruct)$/;"	f
+TT4_ReadNDEF	src/lib_TagType4.c	/^uint16_t TT4_ReadNDEF(uint8_t *pNDEF)$/;"	f
+TT4_ReadSMS	src/lib_TagType4.c	/^uint16_t TT4_ReadSMS(sSMSInfo *pSMS)$/;"	f
+TT4_ReadURI	src/lib_TagType4.c	/^uint16_t TT4_ReadURI(sURI_Info *pURI)$/;"	f
+TT4_ReadVcard	src/lib_TagType4.c	/^uint16_t TT4_ReadVcard(sVcardInfo *pVcard)$/;"	f
+TT4_WriteEmail	src/lib_TagType4.c	/^uint16_t TT4_WriteEmail(sEmailInfo *pEmailStruct)$/;"	f
+TT4_WriteGeo	src/lib_TagType4.c	/^uint16_t TT4_WriteGeo(sGeoInfo *pGeo)$/;"	f
+TT4_WriteMyApp	src/lib_TagType4.c	/^uint16_t TT4_WriteMyApp(sMyAppInfo *pMyAppStruct)$/;"	f
+TT4_WriteNDEF	src/lib_TagType4.c	/^uint16_t TT4_WriteNDEF(uint8_t *pNDEF)$/;"	f
+TT4_WriteSMS	src/lib_TagType4.c	/^uint16_t TT4_WriteSMS(sSMSInfo *pSMS)$/;"	f
+TT4_WriteURI	src/lib_TagType4.c	/^uint16_t TT4_WriteURI(sURI_Info *pURI)$/;"	f
+TT4_WriteVcard	src/lib_TagType4.c	/^uint16_t TT4_WriteVcard(sVcardInfo *pVcard)$/;"	f
+TYPE_LENGTH_FIELD	inc/lib_NDEF.h	50;"	d
+TagT4Init	inc/lib_wrapper.h	37;"	d
+Tag_TypeDef	inc/lib_TagType4.h	/^} Tag_TypeDef;$/;"	t	typeref:enum:__anon17
+Title	inc/lib_NDEF_Vcard.h	/^	char Title[80];$/;"	m	struct:__anon15
+Type	inc/lib_NDEF.h	/^	uint8_t Type[0xFF];$/;"	m	struct:__anon19
+TypeLength	inc/lib_NDEF.h	/^  uint8_t TypeLength;$/;"	m	struct:__anon19
+UB_STATUS_OFFSET	inc/drv_M24SR.h	48;"	d
+UNKNOWN_TAG	inc/lib_TagType4.h	/^	UNKNOWN_TAG = 0,$/;"	e	enum:__anon17
+UNKNOWN_TYPE	inc/lib_NDEF.h	/^	UNKNOWN_TYPE = 0,$/;"	e	enum:__anon18
+URI_EMAIL_TYPE	inc/lib_NDEF.h	/^	URI_EMAIL_TYPE,$/;"	e	enum:__anon18
+URI_FIRST_DATA_END	inc/lib_NDEF.h	102;"	d
+URI_FIRST_DATA_END_LENGTH	inc/lib_NDEF.h	103;"	d
+URI_GEO_TYPE	inc/lib_NDEF.h	/^	URI_GEO_TYPE,$/;"	e	enum:__anon18
+URI_ID_0x00	inc/lib_NDEF.h	121;"	d
+URI_ID_0x01	inc/lib_NDEF.h	122;"	d
+URI_ID_0x01_STRING	inc/lib_NDEF.h	159;"	d
+URI_ID_0x02	inc/lib_NDEF.h	123;"	d
+URI_ID_0x02_STRING	inc/lib_NDEF.h	160;"	d
+URI_ID_0x03	inc/lib_NDEF.h	124;"	d
+URI_ID_0x03_STRING	inc/lib_NDEF.h	161;"	d
+URI_ID_0x04	inc/lib_NDEF.h	125;"	d
+URI_ID_0x04_STRING	inc/lib_NDEF.h	162;"	d
+URI_ID_0x05	inc/lib_NDEF.h	126;"	d
+URI_ID_0x05_STRING	inc/lib_NDEF.h	163;"	d
+URI_ID_0x06	inc/lib_NDEF.h	127;"	d
+URI_ID_0x06_STRING	inc/lib_NDEF.h	164;"	d
+URI_ID_0x07	inc/lib_NDEF.h	128;"	d
+URI_ID_0x07_STRING	inc/lib_NDEF.h	165;"	d
+URI_ID_0x08	inc/lib_NDEF.h	129;"	d
+URI_ID_0x08_STRING	inc/lib_NDEF.h	166;"	d
+URI_ID_0x09	inc/lib_NDEF.h	130;"	d
+URI_ID_0x09_STRING	inc/lib_NDEF.h	167;"	d
+URI_ID_0x0A	inc/lib_NDEF.h	131;"	d
+URI_ID_0x0A_STRING	inc/lib_NDEF.h	168;"	d
+URI_ID_0x0B	inc/lib_NDEF.h	132;"	d
+URI_ID_0x0B_STRING	inc/lib_NDEF.h	169;"	d
+URI_ID_0x0C	inc/lib_NDEF.h	133;"	d
+URI_ID_0x0C_STRING	inc/lib_NDEF.h	170;"	d
+URI_ID_0x0D	inc/lib_NDEF.h	134;"	d
+URI_ID_0x0D_STRING	inc/lib_NDEF.h	171;"	d
+URI_ID_0x0E	inc/lib_NDEF.h	135;"	d
+URI_ID_0x0E_STRING	inc/lib_NDEF.h	172;"	d
+URI_ID_0x0F	inc/lib_NDEF.h	136;"	d
+URI_ID_0x0F_STRING	inc/lib_NDEF.h	173;"	d
+URI_ID_0x10	inc/lib_NDEF.h	137;"	d
+URI_ID_0x10_STRING	inc/lib_NDEF.h	174;"	d
+URI_ID_0x11	inc/lib_NDEF.h	138;"	d
+URI_ID_0x11_STRING	inc/lib_NDEF.h	175;"	d
+URI_ID_0x12	inc/lib_NDEF.h	139;"	d
+URI_ID_0x12_STRING	inc/lib_NDEF.h	176;"	d
+URI_ID_0x13	inc/lib_NDEF.h	140;"	d
+URI_ID_0x13_STRING	inc/lib_NDEF.h	177;"	d
+URI_ID_0x14	inc/lib_NDEF.h	141;"	d
+URI_ID_0x14_STRING	inc/lib_NDEF.h	178;"	d
+URI_ID_0x15	inc/lib_NDEF.h	142;"	d
+URI_ID_0x15_STRING	inc/lib_NDEF.h	179;"	d
+URI_ID_0x16	inc/lib_NDEF.h	143;"	d
+URI_ID_0x16_STRING	inc/lib_NDEF.h	180;"	d
+URI_ID_0x17	inc/lib_NDEF.h	144;"	d
+URI_ID_0x17_STRING	inc/lib_NDEF.h	181;"	d
+URI_ID_0x18	inc/lib_NDEF.h	145;"	d
+URI_ID_0x18_STRING	inc/lib_NDEF.h	182;"	d
+URI_ID_0x19	inc/lib_NDEF.h	146;"	d
+URI_ID_0x19_STRING	inc/lib_NDEF.h	183;"	d
+URI_ID_0x1A	inc/lib_NDEF.h	147;"	d
+URI_ID_0x1A_STRING	inc/lib_NDEF.h	184;"	d
+URI_ID_0x1B	inc/lib_NDEF.h	148;"	d
+URI_ID_0x1B_STRING	inc/lib_NDEF.h	185;"	d
+URI_ID_0x1C	inc/lib_NDEF.h	149;"	d
+URI_ID_0x1C_STRING	inc/lib_NDEF.h	186;"	d
+URI_ID_0x1D	inc/lib_NDEF.h	150;"	d
+URI_ID_0x1D_STRING	inc/lib_NDEF.h	187;"	d
+URI_ID_0x1E	inc/lib_NDEF.h	151;"	d
+URI_ID_0x1E_STRING	inc/lib_NDEF.h	188;"	d
+URI_ID_0x1F	inc/lib_NDEF.h	152;"	d
+URI_ID_0x1F_STRING	inc/lib_NDEF.h	189;"	d
+URI_ID_0x20	inc/lib_NDEF.h	153;"	d
+URI_ID_0x20_STRING	inc/lib_NDEF.h	190;"	d
+URI_ID_0x21	inc/lib_NDEF.h	154;"	d
+URI_ID_0x21_STRING	inc/lib_NDEF.h	191;"	d
+URI_ID_0x22	inc/lib_NDEF.h	155;"	d
+URI_ID_0x22_STRING	inc/lib_NDEF.h	192;"	d
+URI_ID_0x23	inc/lib_NDEF.h	156;"	d
+URI_ID_0x23_STRING	inc/lib_NDEF.h	193;"	d
+URI_LATITUDE_END	inc/lib_NDEF.h	96;"	d
+URI_LATITUDE_END_LENGTH	inc/lib_NDEF.h	97;"	d
+URI_Message	inc/lib_NDEF_URI.h	/^	char URI_Message[400];$/;"	m	struct:__anon2
+URI_RFU	inc/lib_NDEF.h	157;"	d
+URI_SECOND_DATA_END	inc/lib_NDEF.h	111;"	d
+URI_SECOND_DATA_END_LENGTH	inc/lib_NDEF.h	112;"	d
+URI_SMS_TYPE	inc/lib_NDEF.h	/^	URI_SMS_TYPE,$/;"	e	enum:__anon18
+URI_TAG	inc/lib_TagType4.h	/^	URI_TAG,$/;"	e	enum:__anon17
+URI_TYPE_STRING	inc/lib_NDEF.h	87;"	d
+URI_TYPE_STRING_LENGTH	inc/lib_NDEF.h	88;"	d
+URL_TYPE	inc/lib_NDEF.h	/^	URL_TYPE,$/;"	e	enum:__anon18
+VCARD	inc/lib_NDEF_Vcard.h	48;"	d
+VCARD_STRING_SIZE	inc/lib_NDEF_Vcard.h	66;"	d
+VCARD_TAG	inc/lib_TagType4.h	/^  VCARD_TAG,$/;"	e	enum:__anon17
+VCARD_TYPE	inc/lib_NDEF.h	/^  VCARD_TYPE,$/;"	e	enum:__anon18
+VCARD_TYPE_STRING	inc/lib_NDEF.h	78;"	d
+VCARD_TYPE_STRING_LENGTH	inc/lib_NDEF.h	79;"	d
+VCARD_VERSION_2_1	inc/lib_NDEF_Vcard.h	40;"	d
+VCARD_VERSION_2_1_SIZE	inc/lib_NDEF_Vcard.h	41;"	d
+VCARD_VERSION_3_0	inc/lib_NDEF_Vcard.h	43;"	d
+VCARD_VERSION_3_0_SIZE	inc/lib_NDEF_Vcard.h	44;"	d
+VERSION	inc/lib_NDEF_Vcard.h	49;"	d
+VERSION_STRING_SIZE	inc/lib_NDEF_Vcard.h	67;"	d
+Version	inc/lib_NDEF_Vcard.h	/^	char Version [10];$/;"	m	struct:__anon15
+Version	inc/lib_TagType4.h	/^	uint8_t Version;$/;"	m	struct:__anon16
+WELL_KNOWN_ABRIDGED_URI_TYPE	inc/lib_NDEF.h	/^	WELL_KNOWN_ABRIDGED_URI_TYPE,$/;"	e	enum:__anon18
+WIFI_TAG	inc/lib_TagType4.h	/^	WIFI_TAG$/;"	e	enum:__anon17
+WIP	inc/drv_M24SR.h	/^	WIP,$/;"	e	enum:__anon14
+WORK_ADDRESS	inc/lib_NDEF_Vcard.h	57;"	d
+WORK_ADDRESS_STRING_SIZE	inc/lib_NDEF_Vcard.h	75;"	d
+WORK_EMAIL	inc/lib_NDEF_Vcard.h	55;"	d
+WORK_EMAIL_STRING_SIZE	inc/lib_NDEF_Vcard.h	73;"	d
+WORK_TEL	inc/lib_NDEF_Vcard.h	52;"	d
+WORK_TEL_STRING_SIZE	inc/lib_NDEF_Vcard.h	70;"	d
+WRITE_PWD	inc/drv_M24SR.h	60;"	d
+WorkAddress	inc/lib_NDEF_Vcard.h	/^	char WorkAddress[80];$/;"	m	struct:__anon15
+WorkEmail	inc/lib_NDEF_Vcard.h	/^	char WorkEmail[80];$/;"	m	struct:__anon15
+WorkTel	inc/lib_NDEF_Vcard.h	/^	char WorkTel[40];$/;"	m	struct:__anon15
+WriteAccess	inc/lib_STProprietary_feature.h	/^	uint8_t WriteAccess;$/;"	m	struct:__anon3
+WriteAccess	inc/lib_TagType4.h	/^	uint8_t WriteAccess;$/;"	m	struct:__anon16
+WriteData	inc/lib_wrapper.h	47;"	d
+WritePrivateData	inc/lib_wrapper.h	50;"	d
+XVCARD_TYPE_STRING	inc/lib_NDEF.h	81;"	d
+XVCARD_TYPE_STRING_LENGTH	inc/lib_NDEF.h	82;"	d
+__DRV_I2CM24SR_H	inc/drv_I2C_M24SR.h	31;"	d
+__DRV_M24SR_H	inc/drv_M24SR.h	30;"	d
+__LIB_ISO7816_PASSWORD_H	inc/lib_ISO7816_Password.h	30;"	d
+__LIB_M24SR_H	inc/lib_M24SR.h	30;"	d
+__LIB_NDEF_AAR_H	inc/lib_NDEF_AAR.h	30;"	d
+__LIB_NDEF_EMAIL_H	inc/lib_NDEF_Email.h	30;"	d
+__LIB_NDEF_GEO_H	inc/lib_NDEF_Geo.h	30;"	d
+__LIB_NDEF_H	inc/lib_NDEF.h	30;"	d
+__LIB_NDEF_MYAPP_H	inc/lib_NDEF_MyApp.h	30;"	d
+__LIB_NDEF_SMS_H	inc/lib_NDEF_SMS.h	30;"	d
+__LIB_NDEF_URI_H	inc/lib_NDEF_URI.h	30;"	d
+__LIB_NDEF_VCARD_H	inc/lib_NDEF_Vcard.h	30;"	d
+__LIB_STPROPRIETARY_FEATURE_H	inc/lib_STProprietary_feature.h	30;"	d
+__LIB_TAGTYPE4_H	inc/lib_TagType4.h	30;"	d
+__LIB_WRAPPER_H	inc/lib_wrapper.h	24;"	d
+errchk	inc/drv_I2C_M24SR.h	46;"	d
+errorchk	inc/lib_M24SR.h	56;"	d
+errorchk	inc/lib_NDEF.h	41;"	d
+pData	inc/drv_M24SR.h	/^  uint8_t *pData ;  						\/* Command parameters *\/ $/;"	m	struct:__anon10
+pData	inc/drv_M24SR.h	/^  uint8_t *pData ;  \/* Data returned from the card *\/ \/\/ pointer on the transceiver buffer = ReaderRecBuf[CR95HF_DATA_OFFSET ];$/;"	m	struct:__anon12
+protocol	inc/lib_NDEF_URI.h	/^	char protocol[80];$/;"	m	struct:__anon2
+sAARInfo	inc/lib_NDEF_AAR.h	/^}sAARInfo;$/;"	t	typeref:struct:__anon1
+sCCFileInfo	inc/lib_TagType4.h	/^}sCCFileInfo;$/;"	t	typeref:struct:__anon16
+sCCPrivateFileInfo	inc/lib_STProprietary_feature.h	/^}sCCPrivateFileInfo;$/;"	t	typeref:struct:__anon3
+sEmailInfo	inc/lib_NDEF_Email.h	/^}sEmailInfo;$/;"	t	typeref:struct:__anon4
+sGeoInfo	inc/lib_NDEF_Geo.h	/^}sGeoInfo;$/;"	t	typeref:struct:__anon5
+sLedBlinkConfig	inc/lib_NDEF_MyApp.h	/^}sLedBlinkConfig;$/;"	t	typeref:struct:__anon6
+sLineConfig	inc/lib_NDEF_MyApp.h	/^}sLineConfig;$/;"	t	typeref:struct:__anon7
+sMyAppInfo	inc/lib_NDEF_MyApp.h	/^}sMyAppInfo;$/;"	t	typeref:struct:__anon8
+sRecordInfo	inc/lib_NDEF.h	/^}sRecordInfo;	$/;"	t	typeref:struct:__anon19
+sSMSInfo	inc/lib_NDEF_SMS.h	/^}sSMSInfo;$/;"	t	typeref:struct:__anon20
+sURI_Info	inc/lib_NDEF_URI.h	/^}sURI_Info;$/;"	t	typeref:struct:__anon2
+sVcardInfo	inc/lib_NDEF_Vcard.h	/^}sVcardInfo;$/;"	t	typeref:struct:__anon15
+uDIDbyte	src/drv_M24SR.c	/^static uint8_t 						uDIDbyte =0x00;$/;"	v	file:
+uM24SRbuffer	src/drv_M24SR.c	/^uint8_t 									uM24SRbuffer [0xFF];$/;"	v
+uSynchroMode	src/drv_I2C_M24SR.c	/^static uint8_t						uSynchroMode = M24SR_WAITINGTIME_POLLING;$/;"	v	file:
+uc16	inc/drv_I2C_M24SR.h	/^typedef const unsigned short    uc16;$/;"	t
+uc8	inc/drv_I2C_M24SR.h	/^typedef const unsigned char     uc8;$/;"	t
