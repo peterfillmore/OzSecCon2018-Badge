@@ -2,7 +2,7 @@ CC=arm-none-eabi-gcc
 AR=arm-none-eabi-ar
 
 #uGFX library
-GFXLIB=/home/peter/src/OzSecCon_Badge_Dev/LCDTest/Libraries/ugfx
+GFXLIB=ugfx
 #GFXSRC=$(GFXLIB)/src
 GFXINC=$(GFXLIB)
 
