@@ -1,10 +1,10 @@
 /**
   ******************************************************************************
-  * @file    LED_config.c 
+  * @file    LED_config.c
   * @author  MMY Application Team
   * @version V0.0.1
   * @date    06/12/2012
-  * @brief   LED config 
+  * @brief   LED config
 	******************************************************************************
   * @copyright
   *
@@ -17,14 +17,14 @@
 
 /** @addtogroup User_Appli
  * 	@{
- *  @brief      <b>This folder contains the application files</b> 
+ *  @brief      <b>This folder contains the application files</b>
  */
 
 /** @addtogroup HW_Config
  * 	@{
  * @brief      This file defines a set of command to initialize the MCU
  */
- 
+
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
 /* Private macro -------------------------------------------------------------*/
@@ -47,7 +47,7 @@ uint32_t get_timer_clock_frequency (void)
   }
   return multiplier * RCC_Clocks.PCLK_Frequency;
 }
- 
+
 /**
  *	@brief Structure configuration for the Timer2 in ms
  *  @param  None
@@ -59,12 +59,12 @@ void timer_clock_init(void)
     //uint32_t COUNTER_Frequency = PWM_Steps * PWM_Frequency;
     uint32_t COUNTER_Frequency = 100 * 100;
     uint32_t PSC_Value = (TIMER_Frequency / COUNTER_Frequency) - 1;
-    //uint16_t ARR_Value = PWM_Steps - 1; 
-    uint16_t ARR_Value = 100 - 1; 
+    //uint16_t ARR_Value = PWM_Steps - 1;
+    uint16_t ARR_Value = 100 - 1;
      /* make sure the peripheral is clocked */
     RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM2, ENABLE);
     RCC_APB2PeriphClockCmd(RCC_APB2Periph_TIM1, ENABLE);
-    
+
     TIM_TimeBaseInitTypeDef TIM_TimeBaseStructure;
     /* set everything back to default values */
     TIM_TimeBaseStructInit (&TIM_TimeBaseStructure);
@@ -84,19 +84,19 @@ void timer_pwm_init (void)
   TIM_OCInitTypeDef  TIM_OCInitStructure;
   /* always initialise local variables before use */
   TIM_OCStructInit (&TIM_OCInitStructure);
- 
+
   /* Common settings for all channels */
   TIM_OCInitStructure.TIM_OCMode = TIM_OCMode_PWM2;
   TIM_OCInitStructure.TIM_OutputState = TIM_OutputState_Enable;
   TIM_OCInitStructure.TIM_OCPolarity = TIM_OCPolarity_High;
   TIM_OCInitStructure.TIM_Pulse = 0;
- 
+
   /* Channel2 - ORANGE LED*/
   TIM_OC1Init (TIMER_LED_EYE_RIGHT, &TIM_OCInitStructure);
- 
+
   /* Channel3 - RED LED*/
   TIM_OC2Init (TIMER_LED_EYE_RIGHT, &TIM_OCInitStructure);
- 
+
   /* Channel4 - BLUE LED*/
   /* make this the opposite polarity to the other two */
   //TIM_OCInitStructure.TIM_OCPolarity = TIM_OCPolarity_Low;
@@ -116,10 +116,10 @@ void led_init(void){
   GPIO_InitTypeDef  GPIO_InitStructure;
   /* always initialise local variables before use */
   GPIO_StructInit (&GPIO_InitStructure);
- 
+
   RCC_AHBPeriphClockCmd (RCC_AHBPeriph_GPIOA, ENABLE);
   RCC_AHBPeriphClockCmd (RCC_AHBPeriph_GPIOB, ENABLE);
- 
+
   /* these pins will be controlled by the CCRx registers */
   GPIO_InitStructure.GPIO_Pin = LED_EYE_RIGHT_BLUE + LED_EYE_RIGHT_RED + LED_EYE_RIGHT_GREEN ;
   GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF;
@@ -127,11 +127,11 @@ void led_init(void){
   GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
   GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_UP ;
   GPIO_Init (LED_EYE_RIGHT_PORT, &GPIO_InitStructure);
- 
+
   /* ensure that the pins all start off in a known state */
   //GPIO_ResetBits (LED_EYE_RIGHT_PORT, LED_EYE_RIGHT_BLUE + LED_EYE_RIGHT_RED + LED_EYE_RIGHT_GREEN);
   GPIO_SetBits (LED_EYE_RIGHT_PORT, LED_EYE_RIGHT_BLUE + LED_EYE_RIGHT_RED + LED_EYE_RIGHT_GREEN);
- 
+
   /* The others get connected to the AF function for the timer */
   GPIO_PinAFConfig (LED_EYE_RIGHT_PORT, LED_EYE_RIGHT_BLUE_Pin_Source, GPIO_AF_2);
   GPIO_PinAFConfig (LED_EYE_RIGHT_PORT, LED_EYE_RIGHT_GREEN_Pin_Source, GPIO_AF_2);
@@ -151,7 +151,7 @@ void led_init(void){
   GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
   GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_UP ;
   GPIO_Init (LED_EYE_LEFT_PORT, &GPIO_InitStructure);
- 
+
   GPIO_SetBits (LED_EYE_LEFT_PORT, LED_EYE_LEFT_BLUE + LED_EYE_LEFT_RED + LED_EYE_LEFT_GREEN);
   //GPIO_PinAFConfig (LED_EYE_LEFT_PORT, LED_EYE_LEFT_BLUE_Pin_Source, GPIO_AF_2);
   GPIO_PinAFConfig(LED_EYE_LEFT_PORT, LED_EYE_LEFT_GREEN_Pin_Source, GPIO_AF_2);

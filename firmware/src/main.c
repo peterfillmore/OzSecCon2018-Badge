@@ -22,10 +22,10 @@ extern volatile uint32_t MSec;
 //ugfx
 systemticks_t gfxSystemTicks(void)
 {
-    
+
     return MSec;
 }
- 
+
 systemticks_t gfxMillisecondsToTicks(delaytime_t ms)
 {
     return ms;
@@ -89,39 +89,39 @@ void flash_led_forever (void)
     //  brightness += increment;
     //  delay_ms (100);
     //  TIM_SetCompare1 (TIM1, brightness);
-    // 
-    //  //LEFT EYE 
+    //
+    //  //LEFT EYE
     //  delay_ms (100);
-    //  TIM_SetCompare2 (TIM2, brightness); 
+    //  TIM_SetCompare2 (TIM2, brightness);
     //  delay_ms (100);
-    //  TIM_SetCompare3 (TIM2, brightness); 
+    //  TIM_SetCompare3 (TIM2, brightness);
     //}
     //TIM_SetCompare1 (TIM1, 0);
     //for (int i = 0; i < 5; i++) {
     //  brightness += increment;
     //  delay_ms (100);
     //  TIM_SetCompare2 (TIM1, brightness);
-    // 
-    //  //LEFT EYE 
+    //
+    //  //LEFT EYE
     //  delay_ms (100);
-    //  TIM_SetCompare2 (TIM2, brightness); 
+    //  TIM_SetCompare2 (TIM2, brightness);
     //  delay_ms (100);
-    //  TIM_SetCompare3 (TIM2, brightness); 
+    //  TIM_SetCompare3 (TIM2, brightness);
     //}
     //TIM_SetCompare2 (TIM1, 0);
     //for (int i = 0; i < 5; i++) {
     //  brightness += increment;
     //  delay_ms (100);
-    //  TIM_SetCompare3 (TIM1, brightness); 
-    // 
-    //  //LEFT EYE 
+    //  TIM_SetCompare3 (TIM1, brightness);
+    //
+    //  //LEFT EYE
     //  delay_ms (100);
-    //  TIM_SetCompare2 (TIM2, brightness); 
+    //  TIM_SetCompare2 (TIM2, brightness);
     //  delay_ms (100);
-    //  TIM_SetCompare3 (TIM2, brightness); 
+    //  TIM_SetCompare3 (TIM2, brightness);
     //}
-    //TIM_SetCompare3 (TIM1, 0); 
- 
+    //TIM_SetCompare3 (TIM1, 0);
+
     //GPIO_WriteBit(GPIOB, GPIO_Pin_11, (increment&2) ? Bit_SET : Bit_RESET);
   }
 }
@@ -130,16 +130,16 @@ int main(void)
 {
   //setup systick handler tick every 1ms
   SysTick_Config(SystemCoreClock/1000);
- 
+
   //DBGMCU->APB1FZ |= DBGMCU_APB1_FZ_DBG_IWDG_STOP;
 
   //__HAL_DBGMCU_FREEZE_IWDG()
   //__HAL_RCC_DBGMCU_CLK_ENABLE();
- 
+
   GPIO_InitTypeDef  GPIO_InitStructure;
   int n = 0;
 
-  // Initialize GPIO clock  
+  // Initialize GPIO clock
   // see stm32f0xx_rcc.h
   RCC_AHBPeriphClockCmd(RCC_AHBPeriph_GPIOA, ENABLE);
   RCC_AHBPeriphClockCmd(RCC_AHBPeriph_GPIOB, ENABLE);
@@ -147,8 +147,8 @@ int main(void)
   RCC_AHBPeriphClockCmd(RCC_AHBPeriph_GPIOF, ENABLE);
 
 
-  Timer_Config(); 
-  Interrupts_Config(); 
+  Timer_Config();
+  Interrupts_Config();
   M24SR_I2CInit();
 
   gfxInit();
@@ -157,7 +157,7 @@ int main(void)
   //gdisp_lld_display();
   //RCC_APB1PeriphClockCmd(RCC_APB1Periph_WWDG, ENABLE);   // WWDG clock enable
   //WWDG_SetWindowValue(0xff)
-  
+
   // Initialize LED pins
   // see stm32f0xx_gpio.h
 
@@ -183,8 +183,8 @@ int main(void)
   GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;
   GPIO_InitStructure.GPIO_Speed = GPIO_Speed_2MHz;
   GPIO_Init(GPIOB, &GPIO_InitStructure);
- 
-  //tooth 4 
+
+  //tooth 4
   GPIO_InitStructure.GPIO_Pin = GPIO_Pin_14;
   GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;
   GPIO_InitStructure.GPIO_Speed = GPIO_Speed_2MHz;
@@ -207,7 +207,7 @@ int main(void)
   //GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;
   //GPIO_InitStructure.GPIO_Speed = GPIO_Speed_2MHz;
   //GPIO_Init(GPIOA, &GPIO_InitStructure);
-  //blue 
+  //blue
   //GPIO_InitStructure.GPIO_Pin = GPIO_Pin_8;
   //GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;
   //GPIO_InitStructure.GPIO_Speed = GPIO_Speed_2MHz;
@@ -224,13 +224,13 @@ int main(void)
   //GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;
   //GPIO_InitStructure.GPIO_Speed = GPIO_Speed_2MHz;
   //GPIO_Init(GPIOB, &GPIO_InitStructure);
-  //blue 
+  //blue
   //GPIO_InitStructure.GPIO_Pin = GPIO_Pin_15;
   //GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;
   //GPIO_InitStructure.GPIO_Speed = GPIO_Speed_2MHz;
   //GPIO_Init(GPIOA, &GPIO_InitStructure);
 
-  
+
   //GPIO_WriteBit(GPIOB, GPIO_Pin_11, Bit_SET);
   //initialize the M24 NFC
   //TT4_Init();
@@ -240,7 +240,7 @@ int main(void)
   //RCC->AHBENR |= RCC_AHBENR_GPIOCEN; 	// enable the clock to GPIOC
 						//(RM0091 lists this as IOPCEN, not GPIOCEN)
   //GPIOC->MODER = (1 << 16);
-	
+
   //SysTick_Config(SystemCoreClock/100);
 
   // Pin PC8
@@ -251,18 +251,18 @@ int main(void)
   gdispImage auraLogo;
   coord_t   swidth, sheight;
 
-   
-  
+
+
   swidth = gdispGetWidth();
   sheight = gdispGetHeight();
- 
-  
-  //gdisp_lld_display() 
+
+
+  //gdisp_lld_display()
   led_init();
   timer_clock_init();
   timer_pwm_init();
-  TIM_Cmd(TIM1, ENABLE); 
-  TIM_Cmd(TIM2, ENABLE); 
+  TIM_Cmd(TIM1, ENABLE);
+  TIM_Cmd(TIM2, ENABLE);
   TIM_CtrlPWMOutputs(TIM1, ENABLE);
   TIM_CtrlPWMOutputs(TIM2, ENABLE);
 
@@ -271,8 +271,8 @@ int main(void)
   GPIO_WriteBit(GPIOB, GPIO_Pin_13, Bit_SET);
   GPIO_WriteBit(GPIOB, GPIO_Pin_14, Bit_SET);
   GPIO_WriteBit(GPIOB, GPIO_Pin_15, Bit_SET);
-   
- 
+
+
   //flash_led_forever();
   while(1)
   {
@@ -287,24 +287,24 @@ int main(void)
     GPIO_WriteBit(GPIOB, GPIO_Pin_13, (n&3) ? Bit_SET : Bit_RESET);
     GPIO_WriteBit(GPIOB, GPIO_Pin_14, (n&4) ? Bit_SET : Bit_RESET);
     GPIO_WriteBit(GPIOB, GPIO_Pin_15, (n&5) ? Bit_SET : Bit_RESET);
-   
-    //flash left eye 
+
+    //flash left eye
     //GPIO_WriteBit(GPIOA, GPIO_Pin_8, (n&6) ? Bit_SET : Bit_RESET);
     //GPIO_WriteBit(GPIOA, GPIO_Pin_9, (n&7) ? Bit_SET : Bit_RESET);
     //GPIO_WriteBit(GPIOA, GPIO_Pin_10, (n&8) ? Bit_SET : Bit_RESET);
- 
-    //flash right eye 
+
+    //flash right eye
     //GPIO_WriteBit(GPIOA, GPIO_Pin_15, (n&6) ? Bit_SET : Bit_RESET); //blue
     //GPIO_WriteBit(GPIOB, GPIO_Pin_3, (n&7) ? Bit_SET : Bit_RESET); //RED
     //GPIO_WriteBit(GPIOB, GPIO_Pin_10, (n&8) ? Bit_SET : Bit_RESET); //green
-  
+
     //GPIO_WriteBit(GPIOA, GPIO_Pin_15, Bit_RESET);// : Bit_RESET);
     //GPIO_WriteBit(GPIOB, GPIO_Pin_3, Bit_RESET); //: Bit_RESET);
     //GPIO_WriteBit(GPIOA, GPIO_Pin_10, Bit_RESET); //: Bit_RESET);
-  
+
     int counter_1 = 75;
     int counter_2 = 65;
-    int counter_3 = 55; 
+    int counter_3 = 55;
     int counter_4 = 60;
     int counter_5 = 70;
     int i=0;
@@ -314,23 +314,23 @@ int main(void)
     TIM_SetCompare3 (TIM1, 120);
     TIM_SetCompare3 (TIM2, 90);
     TIM_SetCompare2 (TIM2, 100);
- 
+
     for(j=0; j< 127; j++){
        TIM_SetCompare1 (TIM1, counter_1 ^ ((j&74)+i));
        TIM_SetCompare2 (TIM1, counter_2 | ((j&75)-i));
        TIM_SetCompare3 (TIM1, counter_3 % ((j&76)/i));
        TIM_SetCompare2 (TIM2, counter_4 ^ ((j&77)*i));
        TIM_SetCompare3 (TIM2, counter_5 & ((j& 78)+i));
-       
+
        TIM_SetCompare1 (TIM1, 120);
        TIM_SetCompare2 (TIM1, 110);
        TIM_SetCompare3 (TIM1, 100);
        TIM_SetCompare2 (TIM2, 105);
        TIM_SetCompare3 (TIM2, 115);
-        
+
        gdispClear(GFX_BLACK);
        gdispDrawString(i, sheight/2, OzSecCon, font, GFX_WHITE);
-       delay_ms(5000); 
+       delay_ms(5000);
        gdispClear(GFX_BLACK);
        //for(i=0;i<127; i++){
        // //TIM_SetCompare1 (TIM1, 120);
@@ -341,11 +341,11 @@ int main(void)
        // GPIO_WriteBit(GPIOA, GPIO_Pin_15, Bit_RESET); //blue
        // GPIO_WriteBit(GPIOB, GPIO_Pin_3, Bit_RESET); //RED
        // GPIO_WriteBit(GPIOB, GPIO_Pin_10, Bit_RESET); //green
-  
+
        //       gdispDrawString(i, sheight/2, OzSecCon, font, GFX_WHITE);
-       //       delay_ms(200); 
-       //       gdispClear(GFX_BLACK);   
-       // } 
+       //       delay_ms(200);
+       //       gdispClear(GFX_BLACK);
+       // }
        TIM_SetCompare1 (TIM1, counter_1^((j&94)+i));
        TIM_SetCompare2 (TIM1, counter_2|((j&95)-i));
        TIM_SetCompare3 (TIM1, counter_3%((j&96)/i));
@@ -361,24 +361,24 @@ int main(void)
 
 
 
-//Standard delay function as described in one 
-//of my previous tutorials! 
-//All it does is operate a nop instruction 
-//until "Time" amount of milliseconds has passed. 
-//void delay_ms(uint32_t Time){ 
-//    volatile uint32_t MSStart = MSec; 
-//    while((MSec-MSStart)<Time) __asm__ volatile("nop"); 
+//Standard delay function as described in one
+//of my previous tutorials!
+//All it does is operate a nop instruction
+//until "Time" amount of milliseconds has passed.
+//void delay_ms(uint32_t Time){
+//    volatile uint32_t MSStart = MSec;
+//    while((MSec-MSStart)<Time) __asm__ volatile("nop");
 //}
 
 /*
  * Debug help -- if asserts are enabled, assertion failure
- * from standard peripheral  library ends up here 
+ * from standard peripheral  library ends up here
  */
 
 
 #ifdef  USE_FULL_ASSERT
 void assert_failed(uint8_t* file, uint32_t line)
-{ 
+{
   /* Infinite loop */
   /* Use GDB to find out why we're here */
   while (1)

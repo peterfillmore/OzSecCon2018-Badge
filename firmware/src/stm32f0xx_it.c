@@ -1,6 +1,6 @@
 /**
   ******************************************************************************
-  * @file    stm32f0xx_it.c 
+  * @file    stm32f0xx_it.c
   * @author  MMY Application Team
   * @version V0.8.2
   * @date    03/21/2013
@@ -18,7 +18,7 @@
   * CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS.
   *
   * <h2><center>&copy; COPYRIGHT 2010 STMicroelectronics</center></h2>
-  */ 
+  */
 
 /* Includes ------------------------------------------------------------------*/
 #include "hw_config.h"
@@ -26,9 +26,9 @@
 
 /** @addtogroup User_Appli
   * @{
-  * @brief      <b>This folder contains the application files</b> 
+  * @brief      <b>This folder contains the application files</b>
   */
-	
+
 /** @addtogroup Stm32f10x_it
  * 	@{
  *  @brief      This file wrap function to IRQ handler (MCU specific)
@@ -157,7 +157,7 @@ void PendSV_Handler(void)
   */
 void SysTick_Handler(void)
 {
-    MSec++; 
+    MSec++;
 }
 
 
@@ -172,24 +172,24 @@ void EXTI9_5_IRQHandler(void)
 //  {
 //		/* Update SelStatus global variable */
 //    SELStatus = 1;
-//    /* Clear the EXTI Line 6 */  
+//    /* Clear the EXTI Line 6 */
 //    EXTI_ClearITPendingBit(EXTI_Line6);
 //  }
-//	
+//
 //	 if(EXTI_GetITStatus(EXTI_Line7) != RESET)
 //  {
-//    DownFunc();  
+//    DownFunc();
 //    /* Clear the EXTI Line 7 */
 //    EXTI_ClearITPendingBit(EXTI_Line7);
 //  }
-//	
+//
 //  if(EXTI_GetITStatus(EXTI_Line9) != RESET)
 //  {
 //    UpFunc();
-//    /* Clear the EXTI Line 9 */  
+//    /* Clear the EXTI Line 9 */
 //    EXTI_ClearITPendingBit(EXTI_Line9);
 //  }
-// 
+//
 }
 
 /******************************************************************************/
@@ -251,6 +251,6 @@ void TIMER_TIMESTAMP_IRQ_HANDLER(void)
 
 /**
   * @}
-  */ 
+  */
 
 /******************* (C) COPYRIGHT 2010 STMicroelectronics *****END OF FILE****/

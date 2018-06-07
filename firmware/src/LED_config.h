@@ -3,8 +3,8 @@
 	* @file          LED_config.h
 	* @author        MMY Application Team
 	* @version       V0.0.1
-	* @date          22/04/2018 
-	* @brief         Setup of LEDs 
+	* @date          22/04/2018
+	* @brief         Setup of LEDs
 	********************************************************************************
 	* @attention
 	*********************************************************************************
@@ -15,7 +15,7 @@
 #define __LED_CONFIG_H
 
 /* Includes ------------------------------------------------------------------*/
-#include "stm32f0xx_it.h" 
+#include "stm32f0xx_it.h"
 #include "stm32f0xx_rcc.h"
 #include "stm32f0xx_misc.h"
 #include "string.h"
@@ -30,8 +30,8 @@
 /* Exported constants --------------------------------------------------------*/
 
 
-/** 
- * @brief LED Pin Definitions 
+/**
+ * @brief LED Pin Definitions
  */
 #define LED_TOOTH_0 GPIO_Pin_11
 #define LED_TOOTH_1 GPIO_Pin_12
@@ -55,39 +55,39 @@
 #define LED_EYE_LEFT_GREEN              GPIO_Pin_10 //PB10  TIM2_CH3 21
 #define LED_EYE_LEFT_GREEN_Pin_Source   GPIO_PinSource10 //PB10  TIM2_CH3 21
 
-/** 
- * @brief  TIMER definitions 
+/**
+ * @brief  TIMER definitions
  */
 
-/* -------------------------------------------------------------------------- 
+/* --------------------------------------------------------------------------
 * PWM RIGHT configuration
 * --------------------------------------------------------------------------
 * 48 MHz / 48 = 1MHz (1us)
-* 1us * 1000 + 1us ~= 1ms	
-* -------------------------------------------------------------------------- */ 
+* 1us * 1000 + 1us ~= 1ms
+* -------------------------------------------------------------------------- */
 #define TIMER_LED_EYE_RIGHT										TIM1
 #define TIMER_LED_EYE_LEFT										TIM2
-#define TIMER_LED_EYE_FREQ									    48000000	
+#define TIMER_LED_EYE_FREQ									    48000000
 #define TIMER_DELAY_PRESCALER									(TIMER_LED_EVE_FREQ/10000)-1
 #define TIMER_DELAY_CLOCK										RCC_APB1Periph_TIM2
-																						
-/* -------------------------------------------------------------------------- 
+
+/* --------------------------------------------------------------------------
 * Delay TIMER configuration (us)
 * --------------------------------------------------------------------------
 * 48 MHz / 1 = 48MHz (0.0138us)
-* 0.020833us * 48 ~= 1us	
-* -------------------------------------------------------------------------- */ 
+* 0.020833us * 48 ~= 1us
+* -------------------------------------------------------------------------- */
 #define TIMER_US_DELAY											TIM2
 #define TIMER_US_DELAY_PERIOD									48
 #define TIMER_US_DELAY_PRESCALER							    1
 #define TIMER_US_DELAY_CLOCK									RCC_APB1Periph_TIM2
 
-/* -------------------------------------------------------------------------- 
+/* --------------------------------------------------------------------------
 * TIMESTAMP configuration (us)
 * --------------------------------------------------------------------------
 * 72 MHz / 72 = 1MHz (1us)
-* 1us * 1 + 1us ~= 2us	
-* -------------------------------------------------------------------------- */ 
+* 1us * 1 + 1us ~= 2us
+* -------------------------------------------------------------------------- */
 #define TIMER_TIMESTAMP												TIM3
 /* in us need to increase value by 2 in interruption */
 //#define TIMER_TIMESTAMP_PERIOD								1
@@ -96,8 +96,8 @@
 #define TIMER_TIMESTAMP_PRESCALER							72
 #define TIMER_TIMESTAMP_CLOCK									RCC_APB1Periph_TIM3
 
-/** 
- * @brief  NVIC definitions 
+/**
+ * @brief  NVIC definitions
  */
 #define NVIC_PRIORITY_GROUP										NVIC_PriorityGroup_2
 

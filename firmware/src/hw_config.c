@@ -1,6 +1,6 @@
 /**
   ******************************************************************************
-  * @file    hw_config.c 
+  * @file    hw_config.c
   * @author  MMY Application Team
   * @version V2.0.0
   * @date    06/12/2012
@@ -25,14 +25,14 @@
 
 /** @addtogroup User_Appli
  * 	@{
- *  @brief      <b>This folder contains the application files</b> 
+ *  @brief      <b>This folder contains the application files</b>
  */
 
 /** @addtogroup HW_Config
  * 	@{
  * @brief      This file defines a set of command to initialize the MCU
  */
- 
+
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
 /* Private macro -------------------------------------------------------------*/
@@ -50,7 +50,7 @@ static void TimerTimestamp_us_Config	( void );
 /** @addtogroup HW_Config_Private_Functions
  * 	@{
  */
- 
+
 /**
  *	@brief Structure configuration for the Timer2 in ms
  *  @param  None
@@ -60,22 +60,22 @@ static void TimerDelay_ms_Config( void )
 {
     TIM_TimeBaseInitTypeDef  TIM_TimeBaseStructure;
 
-	/* -------------------------------------------------------------------------- 
+	/* --------------------------------------------------------------------------
 	 * Delay TIMER configuration
 	 * --------------------------------------------------------------------------
 	 * 48 MHz / 48  = 1MHz (1us)
-	 * 1us * 1000 + 1us ~= 1ms	
-	 * -------------------------------------------------------------------------- */ 
-	TIM_TimeBaseStructure.TIM_Period 			= TIMER_DELAY_PERIOD;      
-	TIM_TimeBaseStructure.TIM_Prescaler			= TIMER_DELAY_PRESCALER;       
-	TIM_TimeBaseStructure.TIM_ClockDivision 	= TIM_CKD_DIV1;    
+	 * 1us * 1000 + 1us ~= 1ms
+	 * -------------------------------------------------------------------------- */
+	TIM_TimeBaseStructure.TIM_Period 			= TIMER_DELAY_PERIOD;
+	TIM_TimeBaseStructure.TIM_Prescaler			= TIMER_DELAY_PRESCALER;
+	TIM_TimeBaseStructure.TIM_ClockDivision 	= TIM_CKD_DIV1;
 	TIM_TimeBaseStructure.TIM_CounterMode 		= TIM_CounterMode_Up;
 	TIM_TimeBaseInit(TIMER_DELAY, &TIM_TimeBaseStructure);
-	
+
 	TIM_UpdateRequestConfig(TIMER_DELAY, TIM_UpdateSource_Global);
-	
+
 	TIM_ClearITPendingBit(TIMER_DELAY, TIM_IT_Update);
-		
+
 	/* Enable TIMER Update interrupt */
 	TIM_ITConfig(TIMER_DELAY, TIM_IT_Update, ENABLE);
 
@@ -92,22 +92,22 @@ static void TimerDelay_us_Config( void )
 {
   TIM_TimeBaseInitTypeDef  TIM_TimeBaseStructure;
 
-	/* -------------------------------------------------------------------------- 
+	/* --------------------------------------------------------------------------
 	* Delay TIMER configuration (us)
 	* --------------------------------------------------------------------------
 	* 72 MHz / 1 = 72MHz (0.013us)
-	* 1us * 71 + 1us ~= 1us	
-	* -------------------------------------------------------------------------- */ 
-	TIM_TimeBaseStructure.TIM_Period 			= TIMER_US_DELAY_PERIOD;      
-	TIM_TimeBaseStructure.TIM_Prescaler 		= TIMER_US_DELAY_PRESCALER;       
-	TIM_TimeBaseStructure.TIM_ClockDivision 	= TIM_CKD_DIV1;    
+	* 1us * 71 + 1us ~= 1us
+	* -------------------------------------------------------------------------- */
+	TIM_TimeBaseStructure.TIM_Period 			= TIMER_US_DELAY_PERIOD;
+	TIM_TimeBaseStructure.TIM_Prescaler 		= TIMER_US_DELAY_PRESCALER;
+	TIM_TimeBaseStructure.TIM_ClockDivision 	= TIM_CKD_DIV1;
 	TIM_TimeBaseStructure.TIM_CounterMode 		= TIM_CounterMode_Up;
 	TIM_TimeBaseInit(TIMER_US_DELAY, &TIM_TimeBaseStructure);
-	
+
 	TIM_UpdateRequestConfig(TIMER_US_DELAY, TIM_UpdateSource_Global);
-	
+
 	TIM_ClearITPendingBit(TIMER_US_DELAY, TIM_IT_Update);
-		
+
 	/* Enable TIMER Update interrupt */
 	TIM_ITConfig(TIMER_US_DELAY, TIM_IT_Update, ENABLE);
 
@@ -125,22 +125,22 @@ static void TimerTimestamp_us_Config( void )
 {
   TIM_TimeBaseInitTypeDef  TIM_TimeBaseStructure;
 
-	/* -------------------------------------------------------------------------- 
+	/* --------------------------------------------------------------------------
 	* Delay TIMER configuration (us)
 	* --------------------------------------------------------------------------
 	* 72 MHz / 1 = 72MHz (0.013us)
-	* 0.013us * 71 + 0.013us ~= 1us	
-	* -------------------------------------------------------------------------- */ 
-	TIM_TimeBaseStructure.TIM_Period 			= TIMER_TIMESTAMP_PERIOD;      
-	TIM_TimeBaseStructure.TIM_Prescaler 		= TIMER_TIMESTAMP_PRESCALER;       
-	TIM_TimeBaseStructure.TIM_ClockDivision 	= TIM_CKD_DIV1;    
+	* 0.013us * 71 + 0.013us ~= 1us
+	* -------------------------------------------------------------------------- */
+	TIM_TimeBaseStructure.TIM_Period 			= TIMER_TIMESTAMP_PERIOD;
+	TIM_TimeBaseStructure.TIM_Prescaler 		= TIMER_TIMESTAMP_PRESCALER;
+	TIM_TimeBaseStructure.TIM_ClockDivision 	= TIM_CKD_DIV1;
 	TIM_TimeBaseStructure.TIM_CounterMode 		= TIM_CounterMode_Up;
 	TIM_TimeBaseInit(TIMER_TIMESTAMP, &TIM_TimeBaseStructure);
-	
+
 	TIM_UpdateRequestConfig(TIMER_TIMESTAMP, TIM_UpdateSource_Global);
-	
+
 	TIM_ClearITPendingBit(TIMER_TIMESTAMP, TIM_IT_Update);
-		
+
 	/* Enable TIMER Update interrupt */
 	TIM_ITConfig(TIMER_TIMESTAMP, TIM_IT_Update, ENABLE);
 
@@ -165,20 +165,20 @@ static void TimerTimestamp_us_Config( void )
  */
 void Set_System(void)
 {
-  /*!  At this stage the microcontroller clock setting is already configured, 
+  /*!  At this stage the microcontroller clock setting is already configured,
        this is done through SystemInit() function which is called from startup
        file (startup_stm32f10x_xx.s) before to branch to application main.
        To reconfigure the default setting of SystemInit() function, refer to
        system_stm32f10x.c file
-     */ 
-	
+     */
+
 //#if defined(USB_USE_EXTERNAL_PULLUP)
 //  GPIO_InitTypeDef  GPIO_InitStructure;
 //#endif /* USB_USE_EXTERNAL_PULLUP */
 
   /* Enable and Disconnect Line GPIO clock */
   //USB_Disconnect_Config();
-	
+
 	/* the following code allow to be deconnected from USB data */
 //#if defined(USB_USE_EXTERNAL_PULLUP)
 //  /* Enable the USB disconnect GPIO clock */
@@ -190,8 +190,8 @@ void Set_System(void)
 //  GPIO_InitStructure.GPIO_Speed = GPIO_Speed_2MHz;
 //  GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
 //  GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL;
-//  GPIO_Init(USB_DISCONNECT, &GPIO_InitStructure);  
-//#endif /* USB_USE_EXTERNAL_PULLUP */  
+//  GPIO_Init(USB_DISCONNECT, &GPIO_InitStructure);
+//#endif /* USB_USE_EXTERNAL_PULLUP */
 
 	/* PWR and BKP clocks selection ------------------------------------------*/
 	//RCC_APB1PeriphClockCmd(RCC_APB1Periph_BKP, ENABLE);
@@ -204,27 +204,27 @@ void Set_System(void)
  */
 void Interrupts_Config (void)
 {
-   NVIC_EnableIRQ(TIM2_IRQn);  
+   NVIC_EnableIRQ(TIM2_IRQn);
    //NVIC_InitTypeDef NVIC_InitStructure;
 
   //NVIC_PriorityGroupConfig(NVIC_PriorityGroup_1);
-	
-	/* Enable and set TIMER IRQ used for delays */ 
+
+	/* Enable and set TIMER IRQ used for delays */
 	//NVIC_InitStructure.NVIC_IRQChannel 	 						= TIMER_DELAY_IRQ_CHANNEL;
 	//NVIC_InitStructure.NVIC_IRQChannelPriority					= 1;
-    	
+
     //NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority 		= TIMER_DELAY_PREEMPTION_PRIORITY;
 	//NVIC_InitStructure.NVIC_IRQChannelSubPriority 		 		= TIMER_DELAY_SUB_PRIORITY;
 	//NVIC_InitStructure.NVIC_IRQChannelCmd 						= ENABLE;
-	//NVIC_Init(&NVIC_InitStructure);		
-	
-    /* Enable and set TIMER IRQ used for delays */ 
+	//NVIC_Init(&NVIC_InitStructure);
+
+    /* Enable and set TIMER IRQ used for delays */
 	//NVIC_InitStructure.NVIC_IRQChannel 					 		= TIMER_TIMESTAMP_IRQ_CHANNEL;
 	//NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority 		= TIMER_TIMESTAMP_PREEMPTION_PRIORITY;
 	//NVIC_InitStructure.NVIC_IRQChannelSubPriority 		 		= TIMER_TIMESTAMP_SUB_PRIORITY;
 	//NVIC_InitStructure.NVIC_IRQChannelCmd 						= ENABLE;
-	//NVIC_Init(&NVIC_InitStructure);		
-	
+	//NVIC_Init(&NVIC_InitStructure);
+
 	/* Enable UART4 IRQ */
     //NVIC_InitStructure.NVIC_IRQChannel = UART4_IRQn;
 	//NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority 		= 1;
@@ -243,18 +243,18 @@ void Interrupts_Config (void)
   //NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
   //NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
   //NVIC_Init(&NVIC_InitStructure);
-	
+
 	/* Enable the EXTI9_5 Interrupt */
   //NVIC_InitStructure.NVIC_IRQChannel = EXTI9_5_IRQn;
   //NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 2;
   //NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
   //NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
   //NVIC_Init(&NVIC_InitStructure);
-	
+
 }
 
 /**
- *	@brief  This function Connects or disconnects the MCU from the USB 
+ *	@brief  This function Connects or disconnects the MCU from the USB
  *  @param  NewState : ENABLE or DISABLE value
  *  @retval None
  */
@@ -320,48 +320,48 @@ void Timer_RCC_Config( void )
  */
 void Timer_Structure_Config( void )
 {
-	TIM_TimeBaseInitTypeDef  TIM_TimeBaseStructure;	
-		
-	/* -------------------------------------------------------------------------- 
+	TIM_TimeBaseInitTypeDef  TIM_TimeBaseStructure;
+
+	/* --------------------------------------------------------------------------
 	 * Delay TIMER configuration
 	 * --------------------------------------------------------------------------
 	 * 72 MHz / 72 = 1MHz (1us)
-	 * 1us * 1000 + 1us ~= 1ms	
-	 * -------------------------------------------------------------------------- */ 
+	 * 1us * 1000 + 1us ~= 1ms
+	 * -------------------------------------------------------------------------- */
 	TIM_TimeBaseStructure.TIM_Period 			= TIMER_DELAY_PERIOD;      /* 1000 */
-	TIM_TimeBaseStructure.TIM_Prescaler 		= TIMER_DELAY_PRESCALER;    /* 72 */   
-	TIM_TimeBaseStructure.TIM_ClockDivision 	= TIM_CKD_DIV1;    
+	TIM_TimeBaseStructure.TIM_Prescaler 		= TIMER_DELAY_PRESCALER;    /* 72 */
+	TIM_TimeBaseStructure.TIM_ClockDivision 	= TIM_CKD_DIV1;
 	TIM_TimeBaseStructure.TIM_CounterMode 		= TIM_CounterMode_Up;
 	TIM_TimeBaseInit(TIMER_DELAY, &TIM_TimeBaseStructure);
-	
+
 	TIM_UpdateRequestConfig(TIMER_DELAY, TIM_UpdateSource_Global);
-	
+
 	TIM_ClearITPendingBit(TIMER_DELAY, TIM_IT_Update);
-		
+
 	/* Enable TIMER Update interrupt */
 	TIM_ITConfig(TIMER_DELAY, TIM_IT_Update, ENABLE);
-    	
-	
-	
-	/* -------------------------------------------------------------------------- 
+
+
+
+	/* --------------------------------------------------------------------------
 	 * To measure system performance in us
 	 * --------------------------------------------------------------------------
 	 * 72 MHz / 4 = 18MHz (0.055us)
-	 * 0.055us * 18 + 0.055us ~= 1us	
-	 * -------------------------------------------------------------------------- */ 
-	//TIM_TimeBaseStructure.TIM_Period 			= TIMER_TIMESTAMP_PERIOD;      
-	//TIM_TimeBaseStructure.TIM_Prescaler 		= TIMER_TIMESTAMP_PRESCALER;       
-	//TIM_TimeBaseStructure.TIM_ClockDivision 	= TIM_CKD_DIV1;    
+	 * 0.055us * 18 + 0.055us ~= 1us
+	 * -------------------------------------------------------------------------- */
+	//TIM_TimeBaseStructure.TIM_Period 			= TIMER_TIMESTAMP_PERIOD;
+	//TIM_TimeBaseStructure.TIM_Prescaler 		= TIMER_TIMESTAMP_PRESCALER;
+	//TIM_TimeBaseStructure.TIM_ClockDivision 	= TIM_CKD_DIV1;
 	//TIM_TimeBaseStructure.TIM_CounterMode 		= TIM_CounterMode_Up;
 	//TIM_TimeBaseInit(TIMER_TIMESTAMP, &TIM_TimeBaseStructure);
 	//
 	//TIM_UpdateRequestConfig(TIMER_TIMESTAMP, TIM_UpdateSource_Global);
 	//
 	//TIM_ClearITPendingBit(TIMER_TIMESTAMP, TIM_IT_Update);
-	//	
+	//
 	///* Enable TIMER Update interrupt */
 	//TIM_ITConfig(TIMER_TIMESTAMP, TIM_IT_Update, ENABLE);
-	
+
 }
 
 /**
@@ -372,9 +372,9 @@ void Timer_Structure_Config( void )
 void delay_ms(uint16_t delay)
 {
 	counter_delay_ms = delay;
-	
+
 	TimerDelay_ms_Config ();
-	
+
 	TIM_SetCounter(TIMER_DELAY, 0);
 	/* TIM2 enable counter */
     TIM_Cmd(TIMER_DELAY, ENABLE);
@@ -393,7 +393,7 @@ void delay_ms(uint16_t delay)
 void delay_us(uint16_t delay)
 {
 	counter_delay_ms = delay;
-	
+
 	TimerDelay_us_Config();
 
 	TIM_SetCounter(TIMER_US_DELAY, 0);
@@ -413,7 +413,7 @@ void delay_us(uint16_t delay)
 void StartPerfMeasurement(void)
 {
 	timestamp_us = 0;
-	
+
 	TimerTimestamp_us_Config ();
 
 	TIM_SetCounter(TIMER_TIMESTAMP, 0);
@@ -432,7 +432,7 @@ uint32_t GetElapsed_us(void)
 }
 
 /**
- *	@brief  Stop measurement 
+ *	@brief  Stop measurement
  *  @param  None
  *  @retval none
  */
@@ -457,13 +457,13 @@ void delayHighPriority_ms(uint16_t delay)
 
 	counter_delay_ms = delay;
 
-	/* Enable and set TIMER IRQ used for delays. High priority*/ 
+	/* Enable and set TIMER IRQ used for delays. High priority*/
 	NVIC_InitStructure.NVIC_IRQChannel	 						= TIMER_DELAY_IRQ_CHANNEL;
-    NVIC_InitStructure.NVIC_IRQChannelPriority                  = 0;	
+    NVIC_InitStructure.NVIC_IRQChannelPriority                  = 0;
     //NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority 		= TIMER_DELAY_PREEMPTION_HIGHPRIORITY;
 	//NVIC_InitStructure.NVIC_IRQChannelSubPriority 		 	= TIMER_DELAY_SUB_HIGHPRIORITY;
 	NVIC_InitStructure.NVIC_IRQChannelCmd 						=	 ENABLE;
-	NVIC_Init(&NVIC_InitStructure);	
+	NVIC_Init(&NVIC_InitStructure);
 
 	TIM_ClearITPendingBit(TIMER_DELAY, TIM_IT_Update);
 	TIM_SetCounter(TIMER_DELAY, 0);
@@ -474,13 +474,13 @@ void delayHighPriority_ms(uint16_t delay)
 	/* TIM2 disable counter */
 	TIM_Cmd(TIMER_DELAY, DISABLE);
 
-	/* Enable and set TIMER IRQ used for delays. Default priority */ 
+	/* Enable and set TIMER IRQ used for delays. Default priority */
 	NVIC_InitStructure.NVIC_IRQChannel 							= TIMER_DELAY_IRQ_CHANNEL;
-    NVIC_InitStructure.NVIC_IRQChannelPriority                  = 1;	
+    NVIC_InitStructure.NVIC_IRQChannelPriority                  = 1;
 	//NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority 		= TIMER_DELAY_PREEMPTION_PRIORITY;
 	//NVIC_InitStructure.NVIC_IRQChannelSubPriority 		 	= TIMER_DELAY_SUB_PRIORITY;
 	NVIC_InitStructure.NVIC_IRQChannelCmd 						=	 ENABLE;
-	NVIC_Init(&NVIC_InitStructure);	
+	NVIC_Init(&NVIC_InitStructure);
 }
 
 /**
@@ -492,7 +492,7 @@ void decrement_delay(void)
 {
 	if(counter_delay_ms != 0)
 	{
-		/* Decrements the counter */ 
+		/* Decrements the counter */
 		counter_delay_ms--;
 	}
 }
