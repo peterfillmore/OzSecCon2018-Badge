@@ -1,3 +1,4 @@
+# intermediate build products
 *.o
 *.a
 # this arrived as a binary, we don't build it
