@@ -42,6 +42,14 @@ If you have OpenOCD installed 'make program' can be used to flash the .bin file 
 
 If there is an error finding the .cfg file, please double-check the OPENOCD_BOARD_DIR constant at the top of the Makefile (in this template directory, not in OpenOCD).
 
+Alternatively, the image can be loaded with dfu-util (if the board has a working USB DFU mode)
+
+    dfu-util -D main.bin -a 0 --dfuse-address 0x08000000
+
+Or dumped
+
+    sudo dfu-util -U dump-filename.bin -a 0 -s 0x08000000:${dump_length}
+
 ###UDEV Rule for the Discovery Board
 
 If you are not able to communicate with the STM32F0-Discovery board without root privileges you should follow the step from [the stlink repo readme file](https://github.com/texane/stlink#readme) for adding a udev rule for this hardware.
