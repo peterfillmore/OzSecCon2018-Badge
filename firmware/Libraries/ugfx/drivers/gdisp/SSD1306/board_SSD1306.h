@@ -81,7 +81,7 @@ static GFXINLINE void init_board(GDisplay *g) {
         SPI_InitTypeDefStruct.SPI_CPOL = SPI_CPOL_High;
         SPI_InitTypeDefStruct.SPI_CPHA = SPI_CPHA_2Edge;
         SPI_InitTypeDefStruct.SPI_NSS = SPI_NSS_Soft;
-        SPI_InitTypeDefStruct.SPI_BaudRatePrescaler = SPI_BaudRatePrescaler_256;
+        SPI_InitTypeDefStruct.SPI_BaudRatePrescaler = SPI_BaudRatePrescaler_64;
         SPI_InitTypeDefStruct.SPI_FirstBit = SPI_FirstBit_MSB;
  
         SPI_Init(SPI1, &SPI_InitTypeDefStruct);

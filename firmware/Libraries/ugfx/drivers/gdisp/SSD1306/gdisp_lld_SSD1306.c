@@ -33,8 +33,8 @@
 	#define GDISP_INITIAL_BACKLIGHT	100
 #endif
 #ifdef SSD1306_PAGE_PREFIX
-	#define SSD1306_PAGE_WIDTH		(GDISP_SCREEN_WIDTH)
-	#define SSD1306_PAGE_OFFSET		0
+	#define SSD1306_PAGE_WIDTH		(GDISP_SCREEN_WIDTH+1)
+	#define SSD1306_PAGE_OFFSET		1
 #else
 	#define SSD1306_PAGE_WIDTH		GDISP_SCREEN_WIDTH
 	#define SSD1306_PAGE_OFFSET		0
@@ -98,17 +98,15 @@ LLDSPEC bool_t gdisp_lld_init(GDisplay *g) {
 	acquire_bus(g);
 
 	write_cmd(g, SSD1306_DISPLAYOFF);
-	write_cmd2(g, SSD1306_SETDISPLAYCLOCKDIV, 0x40);
-	write_cmd2(g, SSD1306_SETMULTIPLEX, GDISP_SCREEN_HEIGHT+1);
+	write_cmd2(g, SSD1306_SETDISPLAYCLOCKDIV, 0x80);
+	write_cmd2(g, SSD1306_SETMULTIPLEX, GDISP_SCREEN_HEIGHT-1);
 	write_cmd2(g, SSD1306_SETPRECHARGE, 0x1F);
 	write_cmd2(g, SSD1306_SETDISPLAYOFFSET, 0);
-	write_cmd(g, SSD1306_SETSTARTLINE | 0x0);
+	write_cmd(g, SSD1306_SETSTARTLINE | 0);
 	write_cmd2(g, SSD1306_ENABLE_CHARGE_PUMP, 0x14);
 	write_cmd2(g, SSD1306_MEMORYMODE, 0);
-	write_cmd(g, SSD1306_COLSCANINC);
-	//write_cmd(g, SSD1306_ROWSCANDEC);
-	write_cmd(g, SSD1306_ROWSCANINC);
-	//write_cmd(g, SSD1306_ROWSCANINC);
+	write_cmd(g, SSD1306_COLSCANDEC);
+	write_cmd(g, SSD1306_ROWSCANDEC);
 	#if GDISP_SCREEN_HEIGHT == 64
 		write_cmd2(g, SSD1306_SETCOMPINS, 0x12);
 	#elif GDISP_SCREEN_HEIGHT == 32
@@ -132,7 +130,7 @@ LLDSPEC bool_t gdisp_lld_init(GDisplay *g) {
 	/* Initialise the GDISP structure */
 	g->g.Width = GDISP_SCREEN_WIDTH;
 	g->g.Height = GDISP_SCREEN_HEIGHT;
-	g->g.Orientation = GDISP_ROTATE_LANDSCAPE;
+	g->g.Orientation = GDISP_ROTATE_0;
 	g->g.Powermode = powerOn;
 	g->g.Backlight = GDISP_INITIAL_BACKLIGHT;
 	g->g.Contrast = GDISP_INITIAL_CONTRAST;
@@ -151,7 +149,7 @@ LLDSPEC bool_t gdisp_lld_init(GDisplay *g) {
 		pages = GDISP_SCREEN_HEIGHT/8;
 
 		acquire_bus(g);
-		write_cmd(g, SSD1306_SETSTARTLINE | 0x10);
+		write_cmd(g, SSD1306_SETSTARTLINE | 0);
 
 		while (pages--) {
 			#if SSD1306_SH1106

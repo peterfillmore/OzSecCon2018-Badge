@@ -119,10 +119,10 @@
     #define GDISP_INCLUDE_USER_FONTS                 GFXOFF
 
 #define GDISP_NEED_IMAGE                             GFXON
-#define GDISP_NEED_IMAGE_NATIVE                  GFXON
+#define GDISP_NEED_IMAGE_NATIVE                  GFXOFF
     #define GDISP_NEED_IMAGE_GIF                     GFXOFF
         #define GDISP_IMAGE_GIF_BLIT_BUFFER_SIZE     32
-    #define GDISP_NEED_IMAGE_BMP                     GFXOFF
+    #define GDISP_NEED_IMAGE_BMP                     GFXON
         #define GDISP_NEED_IMAGE_BMP_1               GFXON
         #define GDISP_NEED_IMAGE_BMP_4               GFXOFF
         #define GDISP_NEED_IMAGE_BMP_4_RLE           GFXOFF

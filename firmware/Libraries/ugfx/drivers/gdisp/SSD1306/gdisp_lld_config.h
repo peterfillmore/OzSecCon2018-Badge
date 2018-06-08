@@ -14,11 +14,11 @@
 /* Driver hardware support.                                                  */
 /*===========================================================================*/
 
-#define GDISP_HARDWARE_FLUSH			GFXOFF		// This controller requires flushing
-#define GDISP_HARDWARE_DRAWPIXEL		GFXOFF
-#define GDISP_HARDWARE_PIXELREAD		GFXOFF
-#define GDISP_HARDWARE_CONTROL      	GFXOFF
-#define GDISP_HARDWARE_FILLS        	GFXOFF
+#define GDISP_HARDWARE_FLUSH			GFXON		// This controller requires flushing
+#define GDISP_HARDWARE_DRAWPIXEL		GFXON
+#define GDISP_HARDWARE_PIXELREAD		GFXON
+#define GDISP_HARDWARE_CONTROL      	GFXON
+#define GDISP_HARDWARE_FILLS        	GFXON
 
 #define GDISP_LLD_PIXELFORMAT			GDISP_PIXELFORMAT_MONO
 
