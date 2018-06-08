@@ -1,0 +1,11 @@
+# intermediate build products
+*.o
+*.a
+# this arrived as a binary, we don't build it
+!firmware/Libraries/ugfx/tools/mcufontencoder/src/libfreetype.dll.a
+
+# final build products
+firmware/main.*
+
+# editor swap files
+*.swp
